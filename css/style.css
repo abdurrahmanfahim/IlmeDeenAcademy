@@ -101,6 +101,7 @@ header
 #banner 
 {
     padding: 112px 0;
+    background: var(--body);
 }
 
 .bismillah
