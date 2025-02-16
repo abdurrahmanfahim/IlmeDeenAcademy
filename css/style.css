@@ -32,7 +32,7 @@
 ul,
 li
 {
-    list-style-type: none;
+    /* list-style-type: none; */
 }
 
 a
@@ -48,6 +48,14 @@ body
 /* ============= Common css End ============= */
 
 /* ============= Navber Start ============= */
+
+header
+{
+    box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.25);
+    position: sticky;
+    top: 0;
+    left: 0;
+}
 
 .navbar-expand-lg .navbar-nav .nav-link 
 {
@@ -88,12 +96,47 @@ body
 
 /* ============= Navber End ============= */
 
+/* ============= Banner Start ============= */
+
+.bismillah
+{
+    width: 290px;
+    height: 65px;
+}
+
+h1
+{
+    color: var(--main);
+    font-family: Poppins;
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+#banner p
+{
+    color: var(--main);
+    font-family: "Noto Sans Bengali";
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+#banner ul
+{
+    color: var(--main);
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 35px;
+    list-style-type: disc;
+}
 
 
-
-
-
-
+/* ============= Banner End ============= */
 
 
 

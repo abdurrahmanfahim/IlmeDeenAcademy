@@ -31,6 +31,23 @@
         justify-content: center;
     }
 
+    h1
+    {
+        font-size: 36px;
+        text-align: center;
+    }
+    
+    #banner p
+    {
+        font-size: 22px;
+        text-align: center;
+    }
+    
+    #banner ul
+    {
+        font-size: 16px;
+    }
+
 }
 
 
