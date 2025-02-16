@@ -1,0 +1,114 @@
+/*   
+  font-family: "Noto Sans Bengali", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+*/
+
+/* 
+  font-family: "Poppins", serif;
+  font-weight: 100;
+  font-style: normal;
+*/
+
+/* ============= Common css Start ============= */
+
+:root
+{
+    --main: #023440;
+    --secondery: #E0BE74;
+    --dark: #625436;
+    --light: #3B798C;
+    --Xlight: #A2C3B6;
+    --body: #f8f9fa;
+}
+
+*
+{
+    padding: 0;
+    margin: 0;
+}
+
+ul,
+li
+{
+    list-style-type: none;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+body
+{
+    background: var(--body);
+}
+
+/* ============= Common css End ============= */
+
+/* ============= Navber Start ============= */
+
+.navbar-expand-lg .navbar-nav .nav-link 
+{
+    color: var(--main);
+    text-align: center;
+    font-family: "Noto Sans Bengali", serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 8px 12px;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:hover
+{
+    /* color: var(--main); */
+    -webkit-text-stroke: 0.5px var(--main);
+}
+
+.button
+{
+    border-radius: 15px;
+    border: 2px solid var(--secondery);
+    background: var(--main);
+    padding: 14px 24px;
+    color: var(--secondery);
+}
+
+.button:hover
+{
+    border-radius: 15px;
+    border: 2px solid var(--main);
+    background: var(--secondery);
+    padding: 14px 24px;
+    color: var(--main);
+    transition: all ease 0.4s;
+}
+
+/* ============= Navber End ============= */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
