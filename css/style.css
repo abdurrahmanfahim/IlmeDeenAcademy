@@ -126,7 +126,7 @@ header
     border-radius: 15px;
     border: 2px solid var(--secondery);
     background: var(--main);
-    padding: 14px 24px;
+    padding: 12px 24px;
     color: var(--secondery);
 }
 
