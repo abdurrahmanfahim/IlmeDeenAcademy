@@ -161,11 +161,9 @@ h1
 
 .lineBox
 {
-    display: flex;
-}
-.line
-{
-    margin: 0 auto !important;
+    width: 100%;
+    height: 69.404px;
+    background: url('../images/line.svg');
 }
 
 /* ============= Banner End ============= */
@@ -251,9 +249,8 @@ h1
 }
 
 @media screen and (min-width: 1920px) {
-    .line
+    .lineBox
     {
-        margin: 0 auto !important;
         width: 100%;
     }
 }
