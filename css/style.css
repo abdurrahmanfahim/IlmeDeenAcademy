@@ -56,7 +56,12 @@ header
     top: 0;
     left: 0;
     background: var(--body);
+}
 
+.container-fluid
+{
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link 
@@ -154,6 +159,14 @@ h1
     line-height: normal;
 }
 
+.lineBox
+{
+    display: flex;
+}
+.line
+{
+    margin: 0 auto !important;
+}
 
 /* ============= Banner End ============= */
 
@@ -181,37 +194,37 @@ h1
 
 @media only screen and (max-width: 991px) {
     
-
+    
 }
 @media only screen and (max-width: 767px) {
-
-
-
+    
+    
+    
 }
 
 @media only screen and (max-width: 485px) {
-
+    
     nav .navbar-brand {
-      max-width: 70%;
+        max-width: 70%;
     }
-
+    
     nav img 
     {
         max-width: 100%;
     }
-
+    
     .callButton
     {
         width: 100%;
         display: flex;
         justify-content: center;
     }
-
+    
     #banner 
     {
         padding: 48px 0;
     }
-
+    
     h1
     {
         font-size: 36px;
@@ -234,5 +247,13 @@ h1
         display: block;
         width: 100%;
     }
+    
+}
 
+@media screen and (min-width: 1920px) {
+    .line
+    {
+        margin: 0 auto !important;
+        width: 100%;
+    }
 }
