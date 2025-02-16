@@ -128,16 +128,14 @@ header
     background: var(--main);
     padding: 12px 24px;
     color: var(--secondery);
+    transition: all ease 0.4s;
 }
 
 .button:hover
 {
-    border-radius: 15px;
     border: 2px solid var(--main);
     background: var(--secondery);
-    padding: 14px 24px;
     color: var(--main);
-    transition: all ease 0.4s;
 }
 
 /* ============= Navber End ============= */
