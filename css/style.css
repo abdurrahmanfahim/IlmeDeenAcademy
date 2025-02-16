@@ -55,6 +55,8 @@ header
     position: sticky;
     top: 0;
     left: 0;
+    background: var(--body);
+
 }
 
 .navbar-expand-lg .navbar-nav .nav-link 
@@ -101,7 +103,6 @@ header
 #banner 
 {
     padding: 112px 0;
-    background: var(--body);
 }
 
 .bismillah
