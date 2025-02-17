@@ -213,6 +213,10 @@ h1
     background: var(--main);
 }
 
+#about .container .left {
+    max-width: 100%;
+}
+
 #about .container .left .left-a {
     column-gap: 20px;
     align-items: center;
