@@ -213,10 +213,6 @@ h1
     background: var(--main);
 }
 
-#about .container .left {
-    max-width: 100%;
-}
-
 #about .container .left .left-a {
     column-gap: 20px;
     align-items: center;
@@ -227,7 +223,7 @@ h1
     background: url('../images/open.webp');
     background-size: cover;
     background-position: center;
-    width: 348px;
+    max-width: 348px;
     height: 440px;
 }
 
@@ -240,7 +236,7 @@ h1
     background: url('../images/rehal.webp');
     background-size: cover;
     background-position: center;
-    width: 241px;
+    max-width: 241px;
     height: 202px;
 }
 
@@ -249,7 +245,7 @@ h1
     background: url('../images/quran.webp');
     background-size: cover;
     background-position: center;
-    width: 201px;
+    max-width: 201px;
     height: 320px;
 }
 
