@@ -585,9 +585,108 @@ h1
     /* border-radius: 12px; */
 }
 
-
 /* ============= FAQ End ============= */
 
+/* ============= contact Start ============= */
+
+#contact
+{
+    padding: 100px 0;
+    font-family: "Noto Sans Bengali";
+}
+
+.formBtn
+{
+    width: 286px;
+    height: 60px;
+    padding: 20px;
+    color: var(--secondery);
+    text-align: center;
+    font-family: "Poppins", serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    border-radius: 15px;
+    border: 2px solid var(--secondery);
+    background: #023440;
+    transition: all linear 0.4s;
+    margin-left: 12px;
+}
+
+.formBtn:hover
+{
+    color: var(--main);
+    background: var(--secondery);
+    border: 2px solid var(--main);
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--Xlight);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: var(--body);
+    background-clip: padding-box;
+    border: 2px solid var(--main);
+    border-radius: 6px;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.form-control:focus {
+    color: var(--light);
+    background-color: var(--body);
+    border-color: var(--secondery);
+    outline: 0;
+    box-shadow: 0 0 0 1px var(--secondery);
+}
+
+#contact .phn, #contact .eml
+{
+    width: 360px;
+    height: 65px;
+    justify-self: end;
+}
+
+#contact .phone h6, #contact .email h6
+{
+    color: var(--main);
+    font-family: "Poppins", serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 31.2px;
+}
+
+#contact .phone p, #contact .email p
+{
+    color: var(--main);
+    font-family: "Poppins", serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27.2px;
+    margin: 0;
+}
+
+#contact label
+{
+    color: var(--light);
+    font-family: "Noto Sans Bengali";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 27.2px;
+}
+
+
+/* ============= contact End ============= */
 
 
 
@@ -691,6 +790,10 @@ h1
     #about .container .left .left-e {
         width: 115.517px;
         height: 185.267px;
+    }
+
+    .accordion button {
+        font-size: 18px;
     }
 
     
