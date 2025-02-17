@@ -18,7 +18,7 @@
     --main: #023440;
     --secondery: #E0BE74;
     --dark: #625436;
-    --light: #3B798C;
+    --light: #1C5B5E;
     --Xlight: #A2C3B6;
     --body: #f8f9fa;
 }
@@ -442,6 +442,7 @@ h1
 
 /* ============= YouTube End ============= */
 
+/* ============= activities Start ============= */
 
 #activities
 {
@@ -461,15 +462,15 @@ h1
     font-family: "Noto Sans Bengali";
     background: var(--main);
     padding: 42px 28px 52px;
-    transition: all linear 0.4s;
+    transition: all linear 0.3s;
     color: var(--secondery);
-    
+    cursor: pointer;
 }
 
 #activities .card:hover
 {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    background: var(--body);
+    background: white;
     color: var(--main);
 }
 
@@ -525,24 +526,67 @@ h1
     line-height: 20px; /* 133.333% */
 }
 
+/* ============= activities End ============= */
 
 
 
 
+/* ============= FAQ Start ============= */
+
+#asked
+{
+    padding: 100px 0;
+    background: var(--main);
+    font-family: "Noto Sans Bengali";
+}
+
+#asked h3
+{
+    margin-bottom: 36px;
+}
 
 
+.accordion 
+{
+    background: var(--main);
+}
+
+.accordion button
+{
+    color: var(--main);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border-radius: 12px;
+}
+
+.accordion-flush>.accordion-item {
+    border-right: 8px;
+    border-left: 8px;
+    border-radius: 8px;
+}
+
+.accordion-item
+{
+    margin-bottom: 26px;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.accordion-body
+{
+    color: var(--light);
+    font-family: "Noto Sans Bengali";
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px; /* 136.842% */
+    /* border-radius: 12px; */
+}
 
 
-
-
-
-
-
-
-
-
-
-
+/* ============= FAQ End ============= */
 
 
 
