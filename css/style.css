@@ -368,12 +368,16 @@ h1
 
     h2
     {
-        font-size: 30px;
+        font-size: 26px;
     }
 
     #about .container .right h3 {
-        font-size: 28px;
+        font-size: 26px;
 
+    }
+
+    #about .container .right p {
+        font-size: 16px;
     }
 
     #about .container .left .left-b {
