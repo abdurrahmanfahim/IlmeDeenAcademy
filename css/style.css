@@ -95,6 +95,7 @@ header
     top: 0;
     left: 0;
     background: var(--body);
+    z-index: 999;
 }
 
 .container-fluid
@@ -277,6 +278,75 @@ h1
 
 /* ============= About End ============= */
 
+/* ============= Servies Start ============= */
+
+#servies
+{
+    padding: 86px 0;
+}
+
+#servies .card
+{
+    border-radius: 10px;
+    background: #023440;
+    border: 2px solid var(--secondery);
+    overflow: hidden;
+    transition: all ease 0.4s;
+}
+
+#servies .card:hover
+{
+    scale: 1.03;
+}
+
+#servies .card .text
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 418px;
+    padding: 36px;
+}
+
+#servies .card h4
+{
+    font-family: "Noto Sans Bengali";
+    font-size: 26.789px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 35.719px; 
+    margin-bottom: 20px;
+}
+
+#servies .card ul
+{
+    font-family: "Noto Sans Bengali";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+}
+
+.cardCall
+{
+    font-family: "Noto Sans Bengali";
+    border-radius: 26.789px;
+    border: 2px solid #E0BE74;
+    color: #E0BE74;
+    text-align: center;
+    font-size: 20.092px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.butn
+{
+    display: flex;
+    justify-content: end;
+}
+
+/* ============= Servies End ============= */
 
 
 
