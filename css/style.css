@@ -223,7 +223,7 @@ h1
     background: url('../images/open.webp');
     background-size: cover;
     background-position: center;
-    max-width: 348px;
+    width: 348px;
     height: 440px;
 }
 
@@ -236,7 +236,7 @@ h1
     background: url('../images/rehal.webp');
     background-size: cover;
     background-position: center;
-    max-width: 241px;
+    width: 241px;
     height: 202px;
 }
 
@@ -245,8 +245,9 @@ h1
     background: url('../images/quran.webp');
     background-size: cover;
     background-position: center;
-    max-width: 201px;
+    width: 201px;
     height: 320px;
+
 }
 
 #about .container .right p {
@@ -374,6 +375,22 @@ h1
         font-size: 32px;
 
     }
+
+    #about .container .left .left-b {
+        width: 200px;
+        height: 254.742px;
+    }
+    
+    #about .container .left .left-d {
+        width: 138.506px;
+        height: 116.95px;
+    }
+    
+    #about .container .left .left-e {
+        width: 115.517px;
+        height: 185.267px;
+    }
+
     
 }
 
