@@ -738,7 +738,7 @@ footer  ul li
     padding: 6px 0;
 }
 
-footer  ul li a:hover
+footer .middle ul a:hover
 {
     text-decoration: underline;
     color: var(--secondery);
