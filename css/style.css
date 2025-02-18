@@ -13,938 +13,849 @@
 
 /* ============= Common css Start ============= */
 
-:root
-{
-    --main: #023440;
-    --secondery: #E0BE74;
-    --dark: #625436;
-    --light: #1C5B5E;
-    --Xlight: #A2C3B6;
-    --body: #f8f9fa;
+:root {
+  --main: #023440;
+  --secondery: #e0be74;
+  --dark: #625436;
+  --light: #1c5b5e;
+  --Xlight: #a2c3b6;
+  --body: #f8f9fa;
 }
 
-*
-{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-a
-{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 
-body
-{
-    background: var(--body);
+body {
+  background: var(--body);
 }
 
-h2
-{
-    font-family: "Noto Sans Bengali";
-    font-size: 34px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+h2 {
+  font-family: "Noto Sans Bengali";
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
-
 
 h3 {
-    font-family: "Noto Sans Bengali";
-    font-size: 38px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 60px;
+  font-family: "Noto Sans Bengali";
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 60px;
 }
 
-
-.--main
-{
-    color: var(--main);
+.--main {
+  color: var(--main);
 }
-.--secondery
-{
-    color: var(--secondery);
+.--secondery {
+  color: var(--secondery);
 }
-.--light
-{
-    color: var(--light);
+.--light {
+  color: var(--light);
 }
-.--dark
-{
-    color: var(--dark);
+.--dark {
+  color: var(--dark);
 }
-.--Xlight
-{
-    color: var(--Xlight);
+.--Xlight {
+  color: var(--Xlight);
 }
-.--body
-{
-    color: var(--body);
+.--body {
+  color: var(--body);
 }
 
 /* ============= Common css End ============= */
 
 /* ============= Navber Start ============= */
 
-header
-{
-    box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.25);
-    position: sticky;
-    top: 0;
-    left: 0;
-    background: var(--body);
-    z-index: 999;
+header {
+  box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.25);
+  position: sticky;
+  top: 0;
+  left: 0;
+  background: var(--body);
+  z-index: 999;
 }
 
-.container-fluid
-{
-    padding-left: 0;
-    padding-right: 0;
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
 }
 
-.navbar-expand-lg .navbar-nav .nav-link 
-{
-    color: var(--main);
-    text-align: center;
-    font-family: "Noto Sans Bengali", serif;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    padding: 8px 12px;
+.navbar-expand-lg .navbar-nav .nav-link {
+  color: var(--main);
+  text-align: center;
+  font-family: "Noto Sans Bengali", serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding: 8px 12px;
 }
 
-.navbar-expand-lg .navbar-nav .nav-link:hover
-{
-    /* color: var(--main); */
-    -webkit-text-stroke: 0.5px var(--main);
+.navbar-expand-lg .navbar-nav .nav-link:hover {
+  /* color: var(--main); */
+  -webkit-text-stroke: 0.5px var(--main);
 }
 
-.button
-{
-    border-radius: 15px;
-    border: 2px solid var(--secondery);
-    background: var(--main);
-    padding: 12px 24px;
-    color: var(--secondery);
-    transition: all ease 0.4s;
+.button {
+  border-radius: 15px;
+  border: 2px solid var(--secondery);
+  background: var(--main);
+  padding: 12px 24px;
+  color: var(--secondery);
+  transition: all ease 0.4s;
 }
 
-.button:hover
-{
-    border: 2px solid var(--main);
-    background: var(--secondery);
-    color: var(--main);
+.button:hover {
+  border: 2px solid var(--main);
+  background: var(--secondery);
+  color: var(--main);
 }
 
 /* ============= Navber End ============= */
 
 /* ============= Banner Start ============= */
 
-#banner 
-{
-    padding: 112px 0;
+#banner {
+  padding: 112px 0;
 }
 
-.bismillah
-{
-    width: 290px;
-    height: 65px;
+.bismillah {
+  width: 290px;
+  height: 65px;
 }
 
-h1
-{
-    color: var(--main);
-    font-family: Poppins;
-    font-size: 52px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+h1 {
+  color: var(--main);
+  font-family: Poppins;
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
-#banner p
-{
-    color: var(--main);
-    font-family: "Noto Sans Bengali";
-    font-size: 26px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
+#banner p {
+  color: var(--main);
+  font-family: "Noto Sans Bengali";
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }
 
-#banner ul
-{
-    color: var(--main);
-    font-family: Poppins;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 35px;
-    list-style-type: disc;
-    margin-bottom: 42px;
+#banner ul {
+  color: var(--main);
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 35px;
+  list-style-type: disc;
+  margin-bottom: 42px;
 }
 
-.bannerCall
-{
-    color: var(--secondery);
-    text-align: center;
-    font-family: Poppins;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+.bannerCall {
+  color: var(--secondery);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
-.lineBox
-{
-    width: 100%;
-    height: 65px;
-    background: url('../images/line.svg');
+.lineBox {
+  width: 100%;
+  height: 65px;
+  background: url("../images/line.svg");
 }
 
 /* ============= Banner End ============= */
 
 /* ============= About Start ============= */
 
-
 #about {
-    padding: 100px 0;
-    background: var(--main);
+  padding: 100px 0;
+  background: var(--main);
 }
 
 #about .container .left .left-a {
-    column-gap: 20px;
-    align-items: center;
+  column-gap: 20px;
+  align-items: center;
 }
 
 #about .container .left .left-b {
-    border-radius: 25px;
-    background: url('../images/open.webp');
-    background-size: cover;
-    background-position: center;
-    width: 348px;
-    height: 440px;
+  border-radius: 25px;
+  background: url("../images/open.webp");
+  background-size: cover;
+  background-position: center;
+  width: 348px;
+  height: 440px;
 }
 
 #about .container .left .left-c {
-    row-gap: 20px;
+  row-gap: 20px;
 }
 
 #about .container .left .left-d {
-    border-radius: 25px;
-    background: url('../images/rehal.webp');
-    background-size: cover;
-    background-position: center;
-    width: 241px;
-    height: 202px;
+  border-radius: 25px;
+  background: url("../images/rehal.webp");
+  background-size: cover;
+  background-position: center;
+  width: 241px;
+  height: 202px;
 }
 
 #about .container .left .left-e {
-    border-radius: 25px;
-    background: url('../images/quran.webp');
-    background-size: cover;
-    background-position: center;
-    width: 201px;
-    height: 320px;
-
+  border-radius: 25px;
+  background: url("../images/quran.webp");
+  background-size: cover;
+  background-position: center;
+  width: 201px;
+  height: 320px;
 }
 
 #about .container .right p {
-    color: var(--body);
-    font-family: "Noto Sans Bengali";
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 32px;
-    margin-bottom: 28px;
+  color: var(--body);
+  font-family: "Noto Sans Bengali";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  margin-bottom: 28px;
 }
-#about .container .right p span
-{
-    color: var(--secondery);
+#about .container .right p span {
+  color: var(--secondery);
 }
 
-.aboutCall
-{
-    color: var(--secondery);
-    text-align: center;    
-    font-family: "Noto Sans Bengali";
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
+.aboutCall {
+  color: var(--secondery);
+  text-align: center;
+  font-family: "Noto Sans Bengali";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }
 
 /* ============= About End ============= */
 
 /* ============= services Start ============= */
 
-#services
-{
-    padding: 100px 0;
+#services {
+  padding: 100px 0;
 }
 
-#services .card
-{
-    border-radius: 10px;
-    background: #023440;
-    border: 2px solid var(--secondery);
-    overflow: hidden;
-    transition: all ease 0.4s;
+#services .card {
+  border-radius: 10px;
+  background: #023440;
+  border: 2px solid var(--secondery);
+  overflow: hidden;
+  transition: all ease 0.4s;
 }
 
-#services .card:hover
-{
-    scale: 1.03;
+#services .card:hover {
+  scale: 1.03;
 }
 
-#services .card .text
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 418px;
-    padding: 36px;
+#services .card .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 418px;
+  padding: 36px;
 }
 
-#services .card h4
-{
-    font-family: "Noto Sans Bengali";
-    font-size: 26.789px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 35.719px; 
-    margin-bottom: 20px;
+#services .card h4 {
+  font-family: "Noto Sans Bengali";
+  font-size: 26.789px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 35.719px;
+  margin-bottom: 20px;
 }
 
-#services .card ul
-{
-    font-family: "Noto Sans Bengali";
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 28px;
+#services .card ul {
+  font-family: "Noto Sans Bengali";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
 }
 
-.cardCall
-{
-    font-family: "Noto Sans Bengali";
-    border-radius: 26.789px;
-    border: 2px solid #E0BE74;
-    color: #E0BE74;
-    text-align: center;
-    font-size: 20.092px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+.cardCall {
+  font-family: "Noto Sans Bengali";
+  border-radius: 26.789px;
+  border: 2px solid #e0be74;
+  color: #e0be74;
+  text-align: center;
+  font-size: 20.092px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
-.butn
-{
-    display: flex;
-    justify-content: end;
+.butn {
+  display: flex;
+  justify-content: end;
 }
 
 /* ============= services End ============= */
 
 /* ============= YouTube Start ============= */
 
-#youTube
-{
-    background: var(--main);
-    padding: 100px 0;
+#youTube {
+  background: var(--main);
+  padding: 100px 0;
 }
 
 .ytp-large-play-button {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    width: 68px;
-    height: 48px;
-    margin-left: -34px;
-    margin-top: -24px;
-    -webkit-transition: opacity .25s cubic-bezier(0,0,.2,1);
-    transition: opacity .25s cubic-bezier(0,0,.2,1);
-    z-index: 63;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 68px;
+  height: 48px;
+  margin-left: -34px;
+  margin-top: -24px;
+  -webkit-transition: opacity 0.25s cubic-bezier(0, 0, 0.2, 1);
+  transition: opacity 0.25s cubic-bezier(0, 0, 0.2, 1);
+  z-index: 63;
 }
 
-.ytp-button:not([aria-disabled=true]):not([disabled]):not([aria-hidden=true]) {
-    cursor: pointer;
+.ytp-button:not([aria-disabled="true"]):not([disabled]):not(
+    [aria-hidden="true"]
+  ) {
+  cursor: pointer;
 }
 
 .ytp-cued-thumbnail-overlay {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-position: center;
-    background-repeat: no-repeat;
-    -webkit-transition: opacity .25s cubic-bezier(0,0,.2,1);
-    transition: opacity .25s cubic-bezier(0,0,.2,1);
-    background-size: cover;
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-transition: opacity 0.25s cubic-bezier(0, 0, 0.2, 1);
+  transition: opacity 0.25s cubic-bezier(0, 0, 0.2, 1);
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
 }
 
 .ytp-cued-thumbnail-overlay-image {
-    background-size: cover;
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
-    position: absolute;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  position: absolute;
 }
 
 /* =============================== */
 
 .html5-video-player {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    z-index: 0;
-    outline: 0;
-    font-family: "YouTube Noto", Roboto, Arial, Helvetica, sans-serif;
-    color: #eee;
-    text-align: left;
-    direction: ltr;
-    font-size: 11px;
-    line-height: 1.3;
-    -webkit-font-smoothing: antialiased;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    touch-action: manipulation;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 0;
+  outline: 0;
+  font-family: "YouTube Noto", Roboto, Arial, Helvetica, sans-serif;
+  color: #eee;
+  text-align: left;
+  direction: ltr;
+  font-size: 11px;
+  line-height: 1.3;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  touch-action: manipulation;
 }
 
-.html5-video-player, .ytp-contextmenu {
-    -ms-high-contrast-adjust: none;
-    forced-color-adjust: none;
+.html5-video-player,
+.ytp-contextmenu {
+  -ms-high-contrast-adjust: none;
+  forced-color-adjust: none;
 }
 
 .iframe-container {
-    overflow: hidden;
-    padding-top: 56.25%;
-    position: relative;
+  overflow: hidden;
+  padding-top: 56.25%;
+  position: relative;
 }
 
 .iframe-container iframe {
-    border: 0;
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    border-radius: 12px;
+  border: 0;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  border-radius: 12px;
 }
 
 /* ============= YouTube End ============= */
 
 /* ============= activities Start ============= */
 
-#activities
-{
-    padding: 100px 0;
+#activities {
+  padding: 100px 0;
 }
 
-#activities .card-box
-{
-    row-gap: 30px;
+#activities .card-box {
+  row-gap: 30px;
 }
 
-#activities .card
-{
-    width: 302px;
-    /* height: 292px; */
-    border-radius: 6px;
-    font-family: "Noto Sans Bengali";
-    background: var(--main);
-    padding: 42px 28px 52px;
-    transition: all linear 0.3s;
-    color: var(--secondery);
-    cursor: pointer;
+#activities .card {
+  width: 302px;
+  /* height: 292px; */
+  border-radius: 6px;
+  font-family: "Noto Sans Bengali";
+  background: var(--main);
+  padding: 42px 28px 52px;
+  transition: all linear 0.3s;
+  color: var(--secondery);
+  cursor: pointer;
 }
 
-#activities .card:hover
-{
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    background: white;
-    color: var(--main);
+#activities .card:hover {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  background: white;
+  color: var(--main);
 }
 
-.base-image, .hover-image {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transition: opacity 0.3s;
+.base-image,
+.hover-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.3s;
 }
 
 .hover-image {
-    opacity: 0;
+  opacity: 0;
 }
 
 #activities .card:hover .hover-image {
-    opacity: 1;
+  opacity: 1;
 }
 #activities .card:hover .base-image {
-    opacity: 0;
+  opacity: 0;
 }
 
-#activities .card .icon
-{
-    height: 46px;
-    margin-bottom: 30px;
-    position: relative;
-    display: inline-block;
-    border-radius: 10px;
+#activities .card .icon {
+  height: 46px;
+  margin-bottom: 30px;
+  position: relative;
+  display: inline-block;
+  border-radius: 10px;
 }
 
-#activities h3
-{
-    margin-bottom: 32px;
+#activities h3 {
+  margin-bottom: 32px;
 }
 
-#activities .card h5
-{
-    text-align: center;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 31.2px;
-    margin-bottom: 16px;
+#activities .card h5 {
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 31.2px;
+  margin-bottom: 16px;
 }
 
-#activities .card p
-{
-    text-align: center;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 20px; /* 133.333% */
+#activities .card p {
+  text-align: center;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 133.333% */
 }
 
 /* ============= activities End ============= */
 
-
-
-
 /* ============= FAQ Start ============= */
 
-#asked
-{
-    padding: 100px 0;
-    background: var(--main);
-    font-family: "Noto Sans Bengali";
+#asked {
+  padding: 100px 0;
+  background: var(--main);
+  font-family: "Noto Sans Bengali";
 }
 
-#asked h3
-{
-    margin-bottom: 36px;
+#asked h3 {
+  margin-bottom: 36px;
 }
 
-
-.accordion 
-{
-    background: var(--main);
+.accordion {
+  background: var(--main);
 }
 
-.accordion button
-{
-    color: var(--main);
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    border-radius: 12px;
+.accordion button {
+  color: var(--main);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border-radius: 12px;
 }
 
-.accordion-flush>.accordion-item {
-    border-right: 8px;
-    border-left: 8px;
-    border-radius: 8px;
+.accordion-flush > .accordion-item {
+  border-right: 8px;
+  border-left: 8px;
+  border-radius: 8px;
 }
 
-.accordion-item
-{
-    margin-bottom: 26px;
-    overflow: hidden;
-    border-radius: 12px;
+.accordion-item {
+  margin-bottom: 26px;
+  overflow: hidden;
+  border-radius: 12px;
 }
 
-.accordion-body
-{
-    color: var(--light);
-    font-family: "Noto Sans Bengali";
-    font-size: 19px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 26px; /* 136.842% */
-    /* border-radius: 12px; */
+.accordion-body {
+  color: var(--light);
+  font-family: "Noto Sans Bengali";
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px; /* 136.842% */
+  /* border-radius: 12px; */
 }
 
 /* ============= FAQ End ============= */
 
 /* ============= contact Start ============= */
 
-#contact
-{
-    padding: 100px 0;
-    font-family: "Noto Sans Bengali";
+#contact {
+  padding: 100px 0;
+  font-family: "Noto Sans Bengali";
 }
 
-.formBtn
-{
-    width: 286px;
-    height: 60px;
-    font-family: "Noto Sans Bengali";
-    padding: 20px;
-    color: var(--secondery);
-    text-align: center;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 20px;
-    border-radius: 15px;
-    border: 2px solid var(--secondery);
-    background: #023440;
-    transition: all linear 0.4s;
-    margin-left: 12px;
+.formBtn {
+  width: 286px;
+  height: 60px;
+  font-family: "Noto Sans Bengali";
+  padding: 20px;
+  color: var(--secondery);
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+  border-radius: 15px;
+  border: 2px solid var(--secondery);
+  background: #023440;
+  transition: all linear 0.4s;
+  margin-left: 12px;
 }
 
-.formBtn:hover
-{
-    color: var(--main);
-    background: var(--secondery);
-    border: 2px solid var(--main);
+.formBtn:hover {
+  color: var(--main);
+  background: var(--secondery);
+  border: 2px solid var(--main);
 }
 
 .form-control {
-    display: block;
-    width: 100%;
-    padding: 15px;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: var(--Xlight);
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    background-color: var(--body);
-    background-clip: padding-box;
-    border: 2px solid var(--main);
-    border-radius: 6px;
-    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  display: block;
+  width: 100%;
+  padding: 15px;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--Xlight);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: var(--body);
+  background-clip: padding-box;
+  border: 2px solid var(--main);
+  border-radius: 6px;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
 .form-control:focus {
-    color: var(--light);
-    background-color: var(--body);
-    border-color: var(--secondery);
-    outline: 0;
-    box-shadow: 0 0 0 1px var(--secondery);
+  color: var(--light);
+  background-color: var(--body);
+  border-color: var(--secondery);
+  outline: 0;
+  box-shadow: 0 0 0 1px var(--secondery);
 }
 
-#contact .phn, #contact .eml
-{
-    width: 360px;
-    height: 65px;
-    justify-self: end;
+#contact .phn,
+#contact .eml {
+  width: 360px;
+  height: 65px;
+  justify-self: end;
 }
 
-#contact .phone h6, #contact .email h6
-{
-    color: var(--main);
-    font-family: "Poppins", serif;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 31.2px;
+#contact .phone h6,
+#contact .email h6 {
+  color: var(--main);
+  font-family: "Poppins", serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 31.2px;
 }
 
-#contact .phone p, #contact .email p
-{
-    color: var(--main);
-    font-family: "Poppins", serif;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 27.2px;
-    margin: 0;
+#contact .phone p,
+#contact .email p {
+  color: var(--main);
+  font-family: "Poppins", serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27.2px;
+  margin: 0;
 }
 
-#contact label
-{
-    color: var(--light);
-    font-family: "Noto Sans Bengali";
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 27.2px;
+#contact label {
+  color: var(--light);
+  font-family: "Noto Sans Bengali";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 27.2px;
+}
+
+/* Hide the spin buttons in WebKit browsers */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Hide spin buttons in Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
 }
 
 /* ============= contact End ============= */
 
 /* ============= Footer Start ============= */
 
-.footerBg
-{
-    width: 100%;
-    height: 332px;
-    background: url('../images/footer.svg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+.footerBg {
+  width: 100%;
+  height: 332px;
+  background: url("../images/footer.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-footer 
-{
-    padding: 42px 0;
-    font-family: "Poppins", serif;
-
+footer {
+  padding: 42px 0;
+  font-family: "Poppins", serif;
 }
 
-footer p, a
-{
-    color: #3B798C;
-    font-family: Poppins;
-    font-size: 13px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+footer p,
+a {
+  color: #3b798c;
+  font-family: Poppins;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
-footer h4 
-{
-    color: var(--Xlight);
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    text-transform: capitalize;
+footer h4 {
+  color: var(--Xlight);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
 }
 
-footer  ul
-{
-    padding: 0;
-    list-style-type: none;
-    
+footer ul {
+  padding: 0;
+  list-style-type: none;
 }
 
-footer  ul li
-{
-    padding: 6px 0;
+footer ul li {
+  padding: 6px 0;
 }
 
-footer .middle ul a:hover
-{
-    text-decoration: underline;
-    color: var(--secondery);
+footer .middle ul a:hover {
+  text-decoration: underline;
+  color: var(--secondery);
 }
 
-.copyright 
-{
-    justify-content: center;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+.copyright {
+  justify-content: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
-.copyright p
-{
-    color: var(--secondery);
-    font-family: Poppins;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    margin: 0;
+.copyright p {
+  color: var(--secondery);
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 0;
 }
 
-footer .logos ul li i
-{
-    width: 26px;
-    height: 26px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    color: var(--secondery);
-    background: var(--light);
-    transition: all linear 0.2s;
+footer .logos ul li i {
+  width: 26px;
+  height: 26px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: var(--secondery);
+  background: var(--light);
+  transition: all linear 0.2s;
 }
 
-footer .logos ul li i:hover
-{
-    background: var(--secondery);
-    color: var(--main);
+footer .logos ul li i:hover {
+  background: var(--secondery);
+  color: var(--main);
 }
-
 
 /* ============= Footer End ============= */
 
-
-
-
-
-
-
-
-
 @media screen and (min-width: 480px) {
-    
 }
 @media only screen and (max-width: 767px) {
-    .callButton
-    {
-        width: 30%;
-        display: flex;
-        justify-content: center;
-    }
-    
-    
+  .callButton {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+  }
 }
-
-
 
 @media screen and (max-width: 991px) {
+  .callButton {
+    width: 16%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
 
-    .callButton
-    {
-        width: 16%;
-        display: flex;
-        justify-content: center;
-        margin: 0 auto;
-
-    }
-
-    .footerBg
-    {
-        width: 100%;
-        height: 380px;
-        background: url('../images/footer-md.svg');
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-    
+  .footerBg {
+    width: 100%;
+    height: 380px;
+    background: url("../images/footer-md.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 }
 @media screen and (min-width: 1920px) {
-    .lineBox
-    {
-        width: 100%;
-    }
-
+  .lineBox {
+    width: 100%;
+  }
 }
 
-
 @media only screen and (max-width: 485px) {
-    
-    nav .navbar-brand {
-        max-width: 70%;
-    }
-    
-    nav img 
-    {
-        max-width: 100%;
-    }
-    
-    .callButton
-    {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
-    
-    #banner 
-    {
-        padding: 48px 0;
-    }
-    
-    h1
-    {
-        font-size: 36px;
-        text-align: center;
-    }
-    
-    #banner p
-    {
-        font-size: 22px;
-        text-align: center;
-    }
-    
-    #banner ul
-    {
-        font-size: 16px;
-    }
-    
-    .bannerCall
-    {
-        display: block;
-        width: 100%;
-    }
+  nav .navbar-brand {
+    max-width: 70%;
+  }
 
-    h2
-    {
-        font-size: 24px;
-    }
+  nav img {
+    max-width: 100%;
+  }
 
-    h3 {
-        font-size: 24px;
-        line-height: 50px;
-    }
+  .callButton {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
 
-    #about .container .right p {
-        font-size: 16px;
-    }
+  #banner {
+    padding: 48px 0;
+  }
 
-    #about .container .left .left-b {
-        width: 200px;
-        height: 254.742px;
-    }
-    
-    #about .container .left .left-d {
-        width: 138.506px;
-        height: 116.95px;
-    }
-    
-    #about .container .left .left-e {
-        width: 115.517px;
-        height: 185.267px;
-    }
+  h1 {
+    font-size: 36px;
+    text-align: center;
+  }
 
-    .accordion button {
-        font-size: 18px;
-    }
+  #banner p {
+    font-size: 22px;
+    text-align: center;
+  }
 
-    .accordion-body {
-        font-size: 14px;
-    }
-    
-    footer .logos ul li i {
-        width: 20px;
-        height: 20px;
-        font-size: 10px;
-    }
+  #banner ul {
+    font-size: 16px;
+  }
 
-    .copyright p
-    {
-        font-size: 10px;
-    }
+  .bannerCall {
+    display: block;
+    width: 100%;
+  }
 
-    #contact label {
-        font-size: 16px;
-    }
+  h2 {
+    font-size: 24px;
+  }
 
-    #contact .phone h6, #contact .email h6 {
-        font-size: 18px;
-        margin-bottom: 0;
-    }
-    
-    #contact .phone p, #contact .email p {
-        font-size: 14px;
-    }
+  h3 {
+    font-size: 24px;
+    line-height: 50px;
+  }
 
+  #about .container .right p {
+    font-size: 16px;
+  }
+
+  #about .container .left .left-b {
+    width: 200px;
+    height: 254.742px;
+  }
+
+  #about .container .left .left-d {
+    width: 138.506px;
+    height: 116.95px;
+  }
+
+  #about .container .left .left-e {
+    width: 115.517px;
+    height: 185.267px;
+  }
+
+  .accordion button {
+    font-size: 18px;
+  }
+
+  .accordion-body {
+    font-size: 14px;
+  }
+
+  footer .logos ul li i {
+    width: 20px;
+    height: 20px;
+    font-size: 10px;
+  }
+
+  .copyright p {
+    font-size: 10px;
+  }
+
+  #contact label {
+    font-size: 16px;
+  }
+
+  #contact .phone h6,
+  #contact .email h6 {
+    font-size: 18px;
+    margin-bottom: 0;
+  }
+
+  #contact .phone p,
+  #contact .email p {
+    font-size: 14px;
+  }
 }
