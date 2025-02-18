@@ -738,6 +738,11 @@ footer  ul li
     padding: 6px 0;
 }
 
+footer  ul li a:hover
+{
+    text-decoration: underline;
+}
+
 .copyright 
 {
     justify-content: center;
@@ -926,6 +931,19 @@ footer .logos ul li i:hover
     .copyright p
     {
         font-size: 10px;
+    }
+
+    #contact label {
+        font-size: 16px;
+    }
+
+    #contact .phone h6, #contact .email h6 {
+        font-size: 18px;
+        margin-bottom: 0;
+    }
+    
+    #contact .phone p, #contact .email p {
+        font-size: 14px;
     }
 
 }
