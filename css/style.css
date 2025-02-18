@@ -741,8 +741,9 @@ footer  ul li
 .copyright 
 {
     justify-content: center;
-    position: relative;
-    bottom: -50px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .copyright p
@@ -753,6 +754,7 @@ footer  ul li
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+    margin: 0;
 }
 
 footer .logos ul li i
@@ -812,10 +814,6 @@ footer .logos ul li i:hover
 
     }
 
-    .copyright {
-        bottom: -20px;
-    }
-
     .footerBg
     {
         width: 100%;
@@ -824,10 +822,6 @@ footer .logos ul li i:hover
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
-    }
-
-    .copyright {
-        bottom: -20px;
     }
     
 }
@@ -929,10 +923,6 @@ footer .logos ul li i:hover
         font-size: 10px;
     }
 
-    .copyright
-    {
-        bottom: -10px;
-    }
     .copyright p
     {
         font-size: 10px;
