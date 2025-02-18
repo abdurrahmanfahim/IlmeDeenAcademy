@@ -278,14 +278,14 @@ h1
 
 /* ============= About End ============= */
 
-/* ============= Servies Start ============= */
+/* ============= services Start ============= */
 
-#servies
+#services
 {
     padding: 100px 0;
 }
 
-#servies .card
+#services .card
 {
     border-radius: 10px;
     background: #023440;
@@ -294,12 +294,12 @@ h1
     transition: all ease 0.4s;
 }
 
-#servies .card:hover
+#services .card:hover
 {
     scale: 1.03;
 }
 
-#servies .card .text
+#services .card .text
 {
     display: flex;
     flex-direction: column;
@@ -308,7 +308,7 @@ h1
     padding: 36px;
 }
 
-#servies .card h4
+#services .card h4
 {
     font-family: "Noto Sans Bengali";
     font-size: 26.789px;
@@ -318,7 +318,7 @@ h1
     margin-bottom: 20px;
 }
 
-#servies .card ul
+#services .card ul
 {
     font-family: "Noto Sans Bengali";
     font-size: 14px;
@@ -346,7 +346,7 @@ h1
     justify-content: end;
 }
 
-/* ============= Servies End ============= */
+/* ============= services End ============= */
 
 /* ============= YouTube Start ============= */
 
