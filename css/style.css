@@ -741,6 +741,7 @@ footer  ul li
 footer  ul li a:hover
 {
     text-decoration: underline;
+    color: var(--secondery);
 }
 
 .copyright 
