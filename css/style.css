@@ -426,6 +426,7 @@ h1 {
   transition: all linear 0.3s;
   color: var(--secondery);
   cursor: pointer;
+  justify-content: center;
 }
 
 #activities .card:hover {
