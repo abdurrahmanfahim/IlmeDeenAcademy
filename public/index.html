@@ -46,7 +46,7 @@
     <link rel="stylesheet" href="./css/all.css">
 
     <!-- Style Sheet -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -54,38 +54,44 @@
 
     <!-- ========= Navbar Start ========= -->
 
-    <header class="container-fluid">
+    <header class="container-fluid  sticky-navbar">
         <div class="container">
-            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#"><img class="logoImg" src="./images/logo.png" alt="logo"></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link" href="#">হোম</a>
+                                <a class="nav-link" href="#banner" data-bs-toggle="collapse"
+                                    data-bs-target=".navbar-collapse.show">হোম</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#about">পরিচিতি</a>
+                                <a class="nav-link" href="#about" data-bs-toggle="collapse"
+                                    data-bs-target=".navbar-collapse.show">পরিচিতি</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#services">সেবাসমূহ</a>
+                                <a class="nav-link" href="#services" data-bs-toggle="collapse"
+                                    data-bs-target=".navbar-collapse.show">সেবাসমূহ</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#youTube">সাক্ষাৎকার</a>
+                                <a class="nav-link" href="#youTube" data-bs-toggle="collapse"
+                                    data-bs-target=".navbar-collapse.show">সাক্ষাৎকার</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#activities">কার্যক্রম</a>
+                                <a class="nav-link" href="#activities" data-bs-toggle="collapse"
+                                    data-bs-target=".navbar-collapse.show">কার্যক্রম</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#asked">জিজ্ঞাসা</a>
+                                <a class="nav-link" href="#asked" data-bs-toggle="collapse"
+                                    data-bs-target=".navbar-collapse.show">জিজ্ঞাসা</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#contact">যোগাযোগ</a>
+                                <a class="nav-link" href="#contact" data-bs-toggle="collapse"
+                                    data-bs-target=".navbar-collapse.show">যোগাযোগ</a>
                             </li>
                         </ul>
                         <a class="button callButton" href="https://wa.me/+8801328453232" target="_blank">
@@ -98,6 +104,7 @@
     </header>
 
     <!-- ========= Navbar End ========= -->
+     
     <!-- ========= Banner Start ========= -->
 
     <section id="banner" class="container-fluid">
@@ -158,20 +165,26 @@
                     <div class="txt">
                         <h2 class="--secondery">পরিচিতি</h2>
                         <h3 class="--body">
-                            আল- কুরআন শিখুন যে কোন সময়, বিশ্বের যেকোন স্থান থেকে!
+                            তা'লীমুল কুরআন: এক নতুন দিগন্তের সূচনা
 
                         </h3>
-                        <p>
-                            আলহামদুলিল্লাহ, উম্মুল কুরআন বাংলাদেশি ভাই-বোনদের সুবিধামত সময়ে, অভিজ্ঞ শিক্ষক/শিক্ষিকা
-                            দ্বারা লাইভ সহিহ কোরআন শিক্ষা, হিফযুল কোরআন, ও আরবি ভাষা শিক্ষা সেবা প্রদান করছে। আমাদের
-                            প্রশিক্ষিত শিক্ষক প্যানেলে মিশরের <span>আল-আজহার বিশ্ববিদ্যালয়ের ছাত্র/ছাত্রীসহ</span> দক্ষ
-                            হাফেজ, ক্বারি ও মাওলানা রয়েছেন। শিশু, কিশোর ও প্রাপ্তবয়স্কদের জন্য আলাদা ব্যবস্থা এবং
-                            নারী-পুরুষদের জন্য পৃথক শিক্ষকের সুযোগ রয়েছে। আমাদের শিক্ষকরা <span>বাংলা, ইংরেজি, আরবি, ও
-                                হিন্দি ভাষায়</span> পাঠদান করতে সক্ষম। আপনি অথবা আপনার সন্তানের জন্য শ্রেষ্ঠ শিক্ষক
-                            নির্বাচন এবং প্রয়োজনে শিক্ষক পরিবর্তনের সুবিধা রয়েছে। <span>লাইভ ক্লাসের মাধ্যমে সঠিক
-                                নিয়মে</span> কুরআন শেখার সুযোগ আপনাকে জান্নাতের পথে এগিয়ে নিতে সাহায্য করবে। আল্লাহ
-                            আপনার সহায় হোন। জাযাকুমুল্লাহু খাইরান।
+                        <p>আলহামদুলিল্লাহ! এখন সময় ও স্থানের সীমাবদ্ধতা ছাড়াই যেকোনো স্থান থেকে <span>কুরআন শেখা</span>
+                            সম্ভব।
+                            তা'লীমুল কুরআন আপনাকে <span>সহিহ কুরআন শিক্ষা, হিফয ও আরবি ভাষা</span> শেখার সুযোগ দিচ্ছে।
+                            <br>
+                            আমাদের <span>প্রশিক্ষিত শিক্ষক প্যানেলে</span> রয়েছেন <span>মিশরের আল-আজহার বিশ্ববিদ্যালয়ের
+                                ছাত্র/ছাত্রী,
+                                দক্ষ হাফেজ, ক্বারি ও মাওলানা</span>।
                         </p>
+
+                        <ul>
+                            <li>শিশু ও প্রাপ্তবয়স্কদের জন্য পৃথক ক্লাস</li>
+                            <li>নারী-পুরুষের জন্য পৃথক শিক্ষক</li>
+                            <li>বহুভাষায় পাঠদান</li>
+                        </ul>
+
+                        <p>জাযাকুমুল্লাহু খাইরান।</p>
+
                         <a class="button aboutCall" href="#contact">আজই শুরু
                             করুন</a>
                     </div>
@@ -191,52 +204,6 @@
                 আমাদের প্রতিষ্ঠানে যা যা শিখতে পারবেন
             </h3>
             <div class="row justify-content-between align-items-center gy-4">
-                <div class="col-xl-4 col-md-6 d-flex justify-content-center">
-                    <div class="card d-flex">
-                        <img class="img-fluid" src="./images/card1.webp" alt="card1">
-                        <div class="text --secondery">
-                            <div class="txt">
-                                <h4>
-                                    হিফযুল কোরআন
-                                </h4>
-                                <ul class="list-unstyled">
-                                    <li>
-                                        <i class="fa-solid fa-check"></i>
-                                        সম্পূর্ণ কোরআন সহিহ শুদ্ধধভাবে হিফয
-                                    </li>
-                                    <li>
-                                        <i class="fa-solid fa-check"></i>
-                                        মাখরাজ
-                                    </li>
-                                    <li>
-                                        <i class="fa-solid fa-check"></i>
-                                        তাজবীদ
-                                    </li>
-                                    <li>
-                                        <i class="fa-solid fa-check"></i>
-                                        সিফাত
-                                    </li>
-                                    <li>
-                                        <i class="fa-solid fa-check"></i>
-                                        নাজরানা
-                                    </li>
-                                    <li>
-                                        <i class="fa-solid fa-check"></i>
-                                        প্রয়োজনীয় মাসআলা মাসায়েল
-                                    </li>
-                                    <li>
-                                        <i class="fa-solid fa-check"></i>
-                                        ২৪/৭ WhatsApp এ সাপোর্ট
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="butn">
-                                <a class="button cardCall" href="#contact">শুরু
-                                    করুন</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 <div class="col-xl-4 col-md-6 d-flex justify-content-center">
                     <div class="card d-flex">
                         <img class="img-fluid" src="./images/card2.webp" alt="card2">
@@ -273,6 +240,52 @@
                                     <li>
                                         <i class="fa-solid fa-check"></i>
                                         প্রয়োজনীয় আয়াত / সুরাহ
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-check"></i>
+                                        ২৪/৭ WhatsApp এ সাপোর্ট
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="butn">
+                                <a class="button cardCall" href="#contact">শুরু
+                                    করুন</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6 d-flex justify-content-center">
+                    <div class="card d-flex">
+                        <img class="img-fluid" src="./images/card1.webp" alt="card1">
+                        <div class="text --secondery">
+                            <div class="txt">
+                                <h4>
+                                    হিফযুল কোরআন
+                                </h4>
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <i class="fa-solid fa-check"></i>
+                                        সম্পূর্ণ কোরআন সহিহ শুদ্ধধভাবে হিফয
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-check"></i>
+                                        মাখরাজ
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-check"></i>
+                                        তাজবীদ
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-check"></i>
+                                        সিফাত
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-check"></i>
+                                        নাজরানা
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-check"></i>
+                                        প্রয়োজনীয় মাসআলা মাসায়েল
                                     </li>
                                     <li>
                                         <i class="fa-solid fa-check"></i>
@@ -427,7 +440,7 @@
                             মানবিক সেবা
                         </h5>
                         <p>
-                            আমরা ধীরে ধীরে মানবিক সেবার দিকে এগোচ্ছি। দরিদ্র বিমোচন, ইয়াতিমের ভরণপোষণ, অতিদরিদ্র
+                            আমরা ধীরে ধীরে মানবিক সেবার দিকে এগোচ্ছি। দারিদ্র বিমোচন, ইয়াতিমের ভরণপোষণ, অতিদরিদ্র
                             মেয়েদের বিবাহ এবং গৃহহীনদের ঘর নির্মাণ।
                         </p>
                     </div>
@@ -443,22 +456,21 @@
 
     <section id="asked" class="container-fluid">
         <div class="container">
-            <h3 class="text-center --secondery">সচরাচর জিজ্ঞাসা</h3>
+            <h3 class="text-center --secondery">সাধারণ জিজ্ঞাসা (FAQ)</h3>
             <div class="accordion accordion-flush" id="accordionFlushExample">
 
                 <div class="accordion-item">
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                            কিভাবে ক্লাস নেয়া হবে?
+                            ❖ কিভাবে আমাদের ক্লাস পরিচালিত হয়?
                         </button>
                     </h2>
                     <div id="flush-collapseOne" class="accordion-collapse collapse"
                         data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">আমাদের লাইভ ওয়ান টু ওয়ান ক্লাসগুলো Zoom অ্যাপ এর মাধ্যমে নেয়া হয় এবং
-                            আপনাদের ক্লাস জয়েন করার Experience সহজতর করতে আমাদের রয়েছে সকল ডিভাইসে ক্লাস জয়েন করার ভিডিও
-                            টিউটোরিয়াল এছাড়াও আমাদের রয়েছে অভিজ্ঞ আইটি এক্সপার্ট যিনি আপনাদের ক্লাস জয়েন সম্পর্কিত যেকোন
-                            সমস্যার সমাধান করতে সবসময় প্রস্তুত থাকবেন।</div>
+                        <div class="accordion-body">আমাদের লাইভ ওয়ান-টু-ওয়ান ক্লাস Zoom অ্যাপের মাধ্যমে পরিচালিত হয়,
+                            যেখানে আপনি সরাসরি উস্তাদের কাছ থেকে কুরআন শিক্ষা নিতে পারবেন। ক্লাসে যোগদান সহজ করার জন্য
+                            সকল ডিভাইসের জন্য ভিডিও টিউটোরিয়াল এবং আইটি এক্সপার্ট সাপোর্ট রয়েছে।</div>
                     </div>
                 </div>
 
@@ -466,16 +478,15 @@
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                            কিভাবে ফ্রি ট্রায়াল ক্লাস গ্রহণ করব?
+                            ❖ কিভাবে ফ্রি ট্রায়াল ক্লাস গ্রহণ করবেন?
                         </button>
                     </h2>
                     <div id="flush-collapseTwo" class="accordion-collapse collapse"
                         data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">আমাদের ওয়েব সাইটে প্রথমেই ট্রায়াল ক্লাস এর যেই ফর্ম দেয়া আছে সেইটি
-                            পূরণ করে আপনি আমাদের ফ্রি ট্রায়াল ক্লাসে অংশগ্রহণ করতে পারবেন । ফর্মটি পূরণ করে সাবমিট করলে
-                            আমাদের ১জন দীনি ভাই আপনার সাথে যোগাযোগ করবে এবং তখন বাকিসব তথ্য দিয়ে আপনাকে ক্লাসে অংশগ্রহণ
-                            করতে সাহায্য করবেন। এছাড়াও আপনি সরাসরি আমাদের ওয়েবসাইটে নিচের দিকে ডানকোনাই দেয়া Whatsapp
-                            বাটনে ক্লিক করে সরাসরি আমাদের সাথে কথা বলেও আপনার কুরআন শেখার যাত্রা শুরু করতে পারেন।</div>
+                        <div class="accordion-body">আমাদের ওয়েবসাইটে ফ্রি ট্রায়াল ক্লাসের ফর্ম রয়েছে। ফর্মটি পূরণ করে
+                            সাবমিট করার পর, আমাদের একজন দ্বীনী ভাই আপনার সাথে যোগাযোগ করবেন এবং প্রয়োজনীয় তথ্য দিয়ে
+                            আপনাকে
+                            ক্লাসে অংশগ্রহণ করতে সহায়তা করবেন।</div>
                     </div>
                 </div>
 
@@ -484,16 +495,15 @@
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#flush-collapseThree" aria-expanded="false"
                             aria-controls="flush-collapseThree">
-                            কেন ১টি ফ্রি ট্রায়াল ক্লাস?
+                            ❖ কেন ফ্রি ট্রায়াল ক্লাসের ব্যবস্থা রাখা হয়েছে?
                         </button>
                     </h2>
                     <div id="flush-collapseThree" class="accordion-collapse collapse"
                         data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">শেখার সুবিধার্থে আমরা আপনাদের জন্য ১টি ফ্রি ট্রায়াল ক্লাস এর
-                            ব্যবস্থা রেখেছি যেখানে আপনি এবং আমাদের সম্মানিত উস্তাদ পরিচিত হতে পারবেন এবং আপনার কুরআন
-                            শেখার প্রথম যাত্রা শুরু হবে ইনশাআল্লাহ। ট্রায়াল ক্লাসে আপনার যদি আমাদের কুরআনের শিক্ষক পছন্দ
-                            না হয় তাহলে আপনারা অবশ্যই আমাদের জানাবেন , আমরা ইনশাআল্লাহ তখন আপনার জন্য আরও ভাল শিক্ষক
-                            নিযুক্ত করব।</div>
+                        <div class="accordion-body">আমাদের লক্ষ্য হল আপনাকে সঠিক শিক্ষকের সাথে যুক্ত করা। ট্রায়াল
+                            ক্লাসের মাধ্যমে আপনি আমাদের সম্মানিত উস্তাদের সাথে পরিচিত হতে পারবেন এবং কুরআন শেখার যাত্রা
+                            শুরু করতে পারবেন, ইনশাআল্লাহ। যদি ট্রায়াল ক্লাসে আপনার শিক্ষক পছন্দ না হয়, তবে আমাদের
+                            জানান—আমরা আপনার জন্য আরও উপযুক্ত শিক্ষক নিযুক্ত করব।</div>
                     </div>
                 </div>
 
@@ -502,18 +512,13 @@
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#flush-collapseFour" aria-expanded="false"
                             aria-controls="flush-collapseFour">
-                            আপনাদের হাদিয়া কত?
+                            ❖ আপনাদের হাদিয়ার পরিমাণ কত?
                         </button>
                     </h2>
                     <div id="flush-collapseFour" class="accordion-collapse collapse"
                         data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">আমাদের উদ্দেশ্যই হচ্ছে আপনাদের মত প্রবাসিদের মধ্যে কুরআন এর আলো
-                            পৌঁছিয়ে দেয়া,কিন্তু এর জন্য আমাদের কিছু খরচ আছে যেইগুলো আমাদের নিজেদের পক্ষে বহন করা সম্ভব
-                            নয়। আমাদের শিক্ষকদের হাদিয়া দিতে হই, যেহেতু অনলাইন ক্লাস তাই যেকোনো ধরনের technical সমস্যার
-                            জন্য technical expert রয়েছে, আপনাদের সার্বক্ষণিক সহায়তার জন্য রয়েছে আরও কিছু টিম মেম্বার।
-                            তার পরও আমরা যথেষ্ট কম খরচে আপনাদের কুরআন শেখার ব্যবস্থা করে থাকি। আমাদের হাদিয়ার পরিমাণটা
-                            নির্ধারিত হয় ক্লাস টাইম এর ওপর ভিত্তি করে,তাই এই সম্পর্কে বিস্তারিত যানতে আমাদের whatsapp এ
-                            মেসেজ দিন।</div>
+                        <div class="accordion-body">আমাদের হাদিয়ার পরিমাণ নির্ধারিত হয় ক্লাসের সময় ও সপ্তাহে কয়দিন ক্লাস
+                            করবেন তার ওপর ভিত্তি করে। বিস্তারিত জানতে, আমাদের WhatsApp-এ মেসেজ করুন।</div>
                     </div>
                 </div>
 
@@ -522,15 +527,19 @@
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#flush-collapseFive" aria-expanded="false"
                             aria-controls="flush-collapseFive">
-                            ট্রায়াল ক্লাস এর পর কি করতে হবে?
+                            ❖ ট্রায়াল ক্লাস শেষে আপনাকে কী করতে হবে?
                         </button>
                     </h2>
                     <div id="flush-collapseFive" class="accordion-collapse collapse"
                         data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">আপনার ট্রায়াল ক্লাস সম্পন্ন হলে আমরা আপনার সাথে পুনরাই যোগাযোগ করব
-                            ইনশাল্লাহ এবং তারপর আপনি কতসময় ধরে ক্লাস নিতে চান,সপ্তাহে কইদিন ক্লাস নিতে চান এবং কি শিখতে
-                            চান; এইগুলো জানার পর আমরা আপনাকে আমাদের হাদিয়া কত দিতে হবে এই সম্পর্কে অবহিত করব। তারপর
-                            আল্লাহর ইচ্ছাই সব ঠিক থাকলে আপনি আপনার কুরআন শেখার যাত্রা শুরু করবেন ইনশাআল্লাহ।</div>
+                        <div class="accordion-body">আপনার ট্রায়াল ক্লাস শেষ হলে, আমরা পুনরায় আপনার সাথে যোগাযোগ করব এবং
+                            জানতে চাইব—<br>
+                            ✅ আপনি কত সময় ধরে ক্লাস নিতে চান<br>
+                            ✅ সপ্তাহে কয়দিন ক্লাস করতে চান<br>
+                            ✅ আপনি কী শিখতে চান<br>
+
+                            এরপর, আমরা আপনাকে হাদিয়ার পরিমাণ জানিয়ে দেব। সব ঠিক থাকলে, আল্লাহর ইচ্ছায় আপনার কুরআন শেখার
+                            যাত্রা শুরু হবে।</div>
                     </div>
                 </div>
 
@@ -538,13 +547,13 @@
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
-                            আপনাদের কিভাবে পেমেন্ট করব?
+                            ❖ কিভাবে পেমেন্ট করতে হবে?
                         </button>
                     </h2>
                     <div id="flush-collapseSix" class="accordion-collapse collapse"
                         data-bs-parent="#accordionFlushExample">
                         <div class="accordion-body">আলহামদুলিল্লাহ, আপনি আমাদের ব্যাংক অ্যাকাউন্টে অথবা বিকাশ/নগদ এর
-                            মাধ্যমেও পেমেন্ট করতে পারবেন।</div>
+                            মাধ্যমে পেমেন্ট করতে পারবেন। বিস্তারিত তথ্যের জন্য WhatsApp-এ যোগাযোগ করুন। </div>
                     </div>
                 </div>
 
@@ -563,13 +572,14 @@
 
             <div class="row justify-content-between">
 
-                <form class="col-lg-8 row gy-4" id="enrollmentForm"
-                    action="https://api.web3forms.com/submit" method="POST">
+                <form class="col-lg-8 row gy-4" id="enrollmentForm" action="https://api.web3forms.com/submit"
+                    method="POST">
 
                     <div class="mb-6 col-lg-6">
                         <input type="hidden" name="access_key" value="98c27c83-2245-4963-b678-71077cc676cb">
                         <label for="exampleInputEmail1" class="form-label">ছাত্রের নাম</label>
-                        <input type="text" class="form-control" id="name" name="name" aria-describedby="emailHelp" required>
+                        <input type="text" class="form-control" id="name" name="name" aria-describedby="emailHelp"
+                            required>
                     </div>
                     <div class="mb-6 col-lg-6">
                         <label for="exampleInputPassword1" class="form-label">নাম্বার</label>
@@ -680,7 +690,7 @@
                     </div>
                 </div>
                 <div class="col-lg-2 col-12 logos d-none d-lg-block">
-                    <h4 class="--secondery">
+                    <h4 class="--Xlight">
                         get in touch
                     </h4>
                     <p>
@@ -718,39 +728,34 @@
 
     <!-- ========= Footer End ========= -->
 
-    <!-- <script>
-        document.getElementById("enrollmentForm").addEventListener("submit", function (event) {
-            event.preventDefault();
-            var name = document.getElementById("name").value;
-            var phone = document.getElementById("phone").value;
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var navLinks = document.querySelectorAll(".nav-link");
+            var navbarCollapse = document.querySelector(".navbar-collapse");
 
-            var formData = new FormData();
-            formData.append("name", name);
-            formData.append("phone", phone);
+            // Smooth scroll and close navbar on link click
+            navLinks.forEach(function (link) {
+                link.addEventListener("click", function (event) {
+                    var targetId = this.getAttribute("href").substring(1);
+                    var targetElement = document.getElementById(targetId);
 
-            fetch("https://script.google.com/macros/s/AKfycbxIki8GK4UP9mgfF68HNWnZnb7jrX5TXLqZ1co3yWxzKuTaTyI6mj1WM3WIkBCF0hW0/exec", {
-                method: "POST",
-                mode: "no-cors",
-                body: formData
-            })
-                .then(response => response.text())
-                .then(data => { alert("সফলভাবে জমা হয়েছে! আপনার তথ্য আমাদের কাছে পৌঁছেছে।"); })
-                .catch(error => { alert("সমস্যা হয়েছে! আবার চেষ্টা করুন।"); });
+                    if (targetElement) {
+                        event.preventDefault();
+                        window.scrollTo({
+                            top: targetElement.getBoundingClientRect().top + window.scrollY - document.querySelector('header').offsetHeight,
+                            behavior: "smooth"
+                        });
+                    }
+
+                    if (navbarCollapse.classList.contains("show")) {
+                        new bootstrap.Collapse(navbarCollapse).hide();
+                    }
+                });
+            });
         });
-    </script> -->
+    </script>
 
-
-
-
-
-
-
-
-
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
     <script src="./js/script.js"></script>
 </body>
 

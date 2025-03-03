@@ -13,6 +13,18 @@
 
 /* ============= Common css Start ============= */
 
+@font-face {
+  font-family: Noto Sans Bengali;
+  src: url('../fonts/NotoSansBengali-VariableFont_wdth\,wght.ttf');
+}
+/* @font-face {
+  font-family: Poppins;
+  src: url('../fonts/Poppins-Regular.ttf');
+  src: url('../fonts/Poppins-Medium.ttf');
+  src: url('../fonts/Poppins-Bold.ttf');
+  src: url('../fonts/Poppins-SemiBold.ttf');
+} */
+
 :root {
   --main: #023440;
   --secondery: #e0be74;
@@ -46,7 +58,7 @@ h2 {
 
 h3 {
   font-family: "Noto Sans Bengali";
-  font-size: 38px;
+  font-size: 36px;
   font-style: normal;
   font-weight: 700;
   line-height: 60px;
@@ -75,14 +87,15 @@ h3 {
 
 /* ============= Navber Start ============= */
 
-header {
+
+.sticky-navbar {
   box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.25);
   position: sticky;
   top: 0;
-  left: 0;
+  z-index: 1000;
   background: var(--body);
-  z-index: 999;
 }
+
 
 .container-fluid {
   padding-left: 0;
@@ -105,6 +118,7 @@ header {
   -webkit-text-stroke: 0.5px var(--main);
 }
 
+
 .button {
   border-radius: 15px;
   border: 2px solid var(--secondery);
@@ -119,6 +133,8 @@ header {
   background: var(--secondery);
   color: var(--main);
 }
+
+
 
 /* ============= Navber End ============= */
 
@@ -223,16 +239,23 @@ h1 {
   height: 320px;
 }
 
-#about .container .right p {
+#about .container .right .txt
+{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+#about .container .right p, ul {
   color: var(--body);
   font-family: "Noto Sans Bengali";
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: 32px;
-  margin-bottom: 28px;
+  margin-bottom: 18px;
 }
-#about .container .right p span {
+#about .container .right span {
   color: var(--secondery);
 }
 
@@ -244,6 +267,11 @@ h1 {
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+  flex-shrink: 0;
+  width: 250px;
+  align-self: center;
+  display: inline-block;
+  margin-top: 10px;
 }
 
 /* ============= About End ============= */
@@ -289,6 +317,7 @@ h1 {
   font-style: normal;
   font-weight: 700;
   line-height: 28px;
+  color: var(--secondery);
 }
 
 .cardCall {
@@ -306,6 +335,11 @@ h1 {
 .butn {
   display: flex;
   justify-content: end;
+}
+
+.fa-check:before {
+  content: "\f00c";
+  margin-right: 8px;
 }
 
 /* ============= services End ============= */
@@ -518,7 +552,7 @@ h1 {
 }
 
 .accordion-item {
-  margin-bottom: 26px;
+  margin-bottom: 16px;
   overflow: hidden;
   border-radius: 12px;
 }
@@ -661,7 +695,7 @@ footer {
 
 footer p,
 a {
-  color: #3b798c;
+  color: var(--secondery);
   font-family: Poppins;
   font-size: 13px;
   font-style: normal;
@@ -689,7 +723,6 @@ footer ul li {
 
 footer .middle ul a:hover {
   text-decoration: underline;
-  color: var(--secondery);
 }
 
 .copyright {
@@ -700,7 +733,7 @@ footer .middle ul a:hover {
 }
 
 .copyright p {
-  color: var(--secondery);
+  color: rgb(156, 155, 153);
   font-family: Poppins;
   font-size: 16px;
   font-style: normal;
@@ -805,11 +838,13 @@ footer .logos ul li i:hover {
 
   h3 {
     font-size: 24px;
-    line-height: 50px;
+    font-weight: 600;
+    line-height: 36px;
   }
 
-  #about .container .right p {
+  #about .container .right p, ul {
     font-size: 16px;
+    margin: 5px;
   }
 
   #about .container .left .left-b {
@@ -827,8 +862,12 @@ footer .logos ul li i:hover {
     height: 185.267px;
   }
 
+  #about .container .right .txt {
+    gap: 2px;
+  }
+
   .accordion button {
-    font-size: 18px;
+    font-size: 14px;
   }
 
   .accordion-body {
@@ -859,4 +898,10 @@ footer .logos ul li i:hover {
   #contact .email p {
     font-size: 14px;
   }
+
+  #banner, #about, #services, #activities,  #asked, #contact
+  {
+    padding: 60px 0;
+  } 
+
 }
