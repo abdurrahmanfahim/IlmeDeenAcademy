@@ -210,9 +210,6 @@ h1 {
 
 #about .container .left .left-b {
   border-radius: 25px;
-  background: url("../images/open.webp");
-  background-size: cover;
-  background-position: center;
   width: 348px;
   height: 440px;
 }
@@ -223,18 +220,12 @@ h1 {
 
 #about .container .left .left-d {
   border-radius: 25px;
-  background: url("../images/rehal.webp");
-  background-size: cover;
-  background-position: center;
   width: 241px;
   height: 202px;
 }
 
 #about .container .left .left-e {
   border-radius: 25px;
-  background: url("../images/quran.webp");
-  background-size: cover;
-  background-position: center;
   width: 201px;
   height: 320px;
 }
@@ -904,4 +895,21 @@ footer .logos ul li i:hover {
     padding: 60px 0;
   } 
 
+}
+
+@media (min-width:992px) and (max-width: 1199px){
+  #about .container .left .left-b {
+    width: 254.857px;
+    height: 324.615px;
+  }
+  
+  #about .container .left .left-d {
+    width: 176.496px;
+    height: 149.028px;
+  }
+  
+  #about .container .left .left-e {
+    width: 147.202px;
+    height: 236.084px;
+  }
 }
