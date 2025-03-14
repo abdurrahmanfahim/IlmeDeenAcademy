@@ -87,6 +87,25 @@ h3 {
 
 /* ============= Navber Start ============= */
 
+.alert {
+  --bs-alert-bg: transparent;
+  --bs-alert-padding-x: 1rem;
+  --bs-alert-padding-y: 1rem;
+  --bs-alert-margin-bottom: 1rem;
+  --bs-alert-color: inherit;
+  --bs-alert-border-color: transparent;
+  --bs-alert-border: var(--bs-border-width) solid var(--bs-alert-border-color);
+  --bs-alert-border-radius: var(--bs-border-radius);
+  --bs-alert-link-color: inherit;
+  position: relative;
+  padding: var(--bs-alert-padding-y) var(--bs-alert-padding-x);
+  margin-bottom: 0;
+  color: var(--secondery);
+  background-color: var(--main);
+  border-radius: 0;
+  font-size: 14px;
+}
+
 
 .sticky-navbar {
   box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.25);
@@ -152,7 +171,7 @@ h3 {
 h1 {
   color: var(--main);
   font-family: Poppins;
-  font-size: 52px;
+  font-size: 46px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -278,11 +297,13 @@ h1 {
   background: #023440;
   border: 2px solid var(--secondery);
   overflow: hidden;
-  transition: all ease 0.4s;
+  transition: all 0.4s ease-out;
+  /* transition: scale 0.4s ease-out; */
+
 }
 
 #services .card:hover {
-  scale: 1.03;
+  /* scale: 1.02; */
 }
 
 #services .card .text {
@@ -709,7 +730,7 @@ footer ul {
 }
 
 footer ul li {
-  padding: 6px 0;
+  padding: 5px 0;
 }
 
 footer .middle ul a:hover {
@@ -752,8 +773,7 @@ footer .logos ul li i:hover {
 
 /* ============= Footer End ============= */
 
-@media screen and (min-width: 480px) {
-}
+
 @media only screen and (max-width: 767px) {
   .callButton {
     width: 30%;
@@ -805,22 +825,23 @@ footer .logos ul li i:hover {
   }
 
   h1 {
-    font-size: 36px;
+    font-size: 24px;
     text-align: center;
   }
 
   #banner p {
-    font-size: 22px;
+    font-size: 18px;
     text-align: center;
   }
 
   #banner ul {
-    font-size: 16px;
+    font-size: 13px;
   }
 
   .bannerCall {
     display: block;
     width: 100%;
+    font-size: 20px;
   }
 
   h2 {
@@ -855,6 +876,10 @@ footer .logos ul li i:hover {
 
   #about .container .right .txt {
     gap: 2px;
+  }
+
+  .aboutCall {
+    font-size: 20px;
   }
 
   .accordion button {
