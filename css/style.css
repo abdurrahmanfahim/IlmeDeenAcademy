@@ -6,7 +6,7 @@
 */
 
 /* 
-  font-family: "Poppins", serif;
+  font-family: "Poppins", serif; 
   font-weight: 100;
   font-style: normal;
 */
@@ -603,7 +603,6 @@ h1 {
   border: 2px solid var(--secondery);
   background: #023440;
   transition: all linear 0.4s;
-  margin-left: 12px;
 }
 
 .formBtn:hover {
@@ -619,7 +618,7 @@ h1 {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: var(--secondery);
+  color: var(--main);
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -628,6 +627,17 @@ h1 {
   border: 2px solid var(--main);
   border-radius: 6px;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+option
+{
+  background: var(--main);
+  color: #e0be74;
+}
+
+option:hover
+{
+  background: var(--Xlight);
 }
 
 .form-control:focus {
@@ -677,7 +687,7 @@ h1 {
 
 /* Hide the spin buttons in WebKit browsers */
 input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
+input::-webkit-inner-spin-button, {
   -webkit-appearance: none;
   margin: 0;
 }
@@ -812,6 +822,10 @@ footer .logos ul li i:hover {
 
   nav img {
     max-width: 100%;
+  }
+
+  .bismillah {
+    width: 65%;
   }
 
   .callButton {

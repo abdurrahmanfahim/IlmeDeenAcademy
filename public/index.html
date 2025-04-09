@@ -67,7 +67,7 @@
     <div class="alert alert-success alert-dismissible fade show text-center" role="alert">
         <strong>একটি ফ্রী ট্রায়াল ক্লাস পেতে এখনই যোগাযোগ করুন।</strong>
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-      </div>
+    </div>
 
     <!-- ========= Notice End ========= -->
 
@@ -98,7 +98,7 @@
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#youTube" data-bs-toggle="collapse"
-                                    data-bs-target=".navbar-collapse.show">সাক্ষাৎকার</a>
+                                    data-bs-target=".navbar-collapse.show">নোটিশ</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#activities" data-bs-toggle="collapse"
@@ -115,6 +115,7 @@
                         </ul>
                         <a class="button callButton" href="https://wa.me/+8801328453232" target="_blank">
                             <i class="fa-solid fa-phone"></i>
+                            <span class="visually-hidden">Contact Us</span>
                         </a>
                     </div>
                 </div>
@@ -123,7 +124,7 @@
     </header>
 
     <!-- ========= Navbar End ========= -->
-     
+
     <!-- ========= Banner Start ========= -->
 
     <section id="banner" class="container-fluid">
@@ -174,12 +175,12 @@
                 <div class="left col-lg-6 col-12 col-md-12 d-flex justify-content-center">
                     <div class="left-a d-flex img-fluid">
                         <!-- <div class="left-b"></div> -->
-                         <img class="img-fluid left-b" src="./images/aboutImg/open.webp" alt="">
+                        <img class="img-fluid left-b" src="./images/aboutImg/open.webp" alt="">
                         <div class="left-c d-flex flex-column">
                             <!-- <div class="left-d"></div> -->
                             <!-- <div class="left-e"></div> -->
-                             <img class="img-fluid left-d" src="./images/aboutImg/rehal.webp" alt="">
-                             <img class="img-fluid left-e" src="./images/aboutImg/quran.webp" alt="">
+                            <img class="img-fluid left-d" src="./images/aboutImg/rehal.webp" alt="">
+                            <img class="img-fluid left-e" src="./images/aboutImg/quran.webp" alt="">
                         </div>
                     </div>
                 </div>
@@ -188,11 +189,11 @@
                         <h2 class="--secondery">পরিচিতি</h2>
                         <h3 class="--body">
                             ইলমে দ্বীন একাডেমি: এক নতুন দিগন্তের সূচনা
-
                         </h3>
                         <p>আলহামদুলিল্লাহ! এখন সময় ও স্থানের সীমাবদ্ধতা ছাড়াই যেকোনো স্থান থেকে <span>কুরআন শেখা</span>
                             সম্ভব।
-                            তা'লীমুল কুরআন আপনাকে <span>সহিহ কুরআন শিক্ষা, হিফয ও আরবি ভাষা</span> শেখার সুযোগ দিচ্ছে।
+                            ইলমে দ্বীন একাডেমি আপনাকে <span>সহিহ কুরআন শিক্ষা, হিফয ও আরবি ভাষা</span> শেখার সুযোগ
+                            দিচ্ছে।
                             <br>
                             আমাদের <span>প্রশিক্ষিত শিক্ষক প্যানেলে</span> রয়েছেন <span>মিশরের আল-আজহার বিশ্ববিদ্যালয়ের
                                 ছাত্র/ছাত্রী,
@@ -207,8 +208,7 @@
 
                         <p>জাযাকুমুল্লাহু খাইরান।</p>
 
-                        <a class="button aboutCall" href="#contact">আজই শুরু
-                            করুন</a>
+                        <a class="button aboutCall" href="#contact">আজই শুরু করুন</a>
                     </div>
                 </div>
             </div>
@@ -383,16 +383,25 @@
     <section id="youTube" class="container-fluid">
         <div class="container">
 
-            <div class="text-center" style=" border: 5px solid #20251a;
-    box-shadow: 2px 2px 117px -13px black;">
 
-                <div class="iframe-container" style="margin: 0 auto;">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/2gyOl4QhUJw" frameborder="0"
-                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" loading="lazy"
-                        allowfullscreen=""></iframe>
-                </div>
+            <!-- <div class="iframe-container" style="margin: 0 auto;  border: 5px solid #20251a;
+                box-shadow: 2px 2px 117px -13px black;">
+             <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/2gyOl4QhUJw"
+                frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                loading="lazy"
+                allowfullscreen=""
+                title="YouTube video: Learning Quran for All">
+             </iframe>
+                </div> -->
 
-            </div>
+            <img class="img-fluid rounded-4" style=" border: 5px solid #20251a;
+    box-shadow: 2px 2px 117px -13px black;" src="./images/posters/কুরআন লার্নিং ফর অল.png"
+                alt="poster: learning quaran for all">
+
         </div>
     </section>
 
@@ -589,57 +598,12 @@
 
     <section id="contact" class="container-fluid">
         <div class="container">
-            <h2 class="text-center --light">যোগাযোগ</h2>
-            <h3 class="text-center --main">আমাদের সাথে যোগাযোগ করুন</h3>
-
-            <div class="row justify-content-between">
-
-                <form class="col-lg-8 row gy-4" id="enrollmentForm" action="https://api.web3forms.com/submit"
-                    method="POST">
-
-                    <div class="mb-6 col-lg-6">
-                        <input type="hidden" name="access_key" value="a8d47ba1-0fd6-41c8-ae56-9efd2c7b0262">
-                        <label for="exampleInputEmail1" class="form-label">ছাত্রের নাম</label>
-                        <input type="text" class="form-control" id="name" name="name" aria-describedby="emailHelp"
-                            required>
-                    </div>
-                    <div class="mb-6 col-lg-6">
-                        <label for="exampleInputPassword1" class="form-label">নাম্বার</label>
-                        <input type="number" class="form-control" id="phone" name="phone" required>
-                    </div>
-                    <button class="formBtn submit col-lg-3">ফ্রি ক্লাসটি
-                        নিশ্চিত
-                        করুন</button>
-                </form>
-
-                <div class="col-lg-4 row flex-column gy-4">
-
-                    <div class="phone col-lg-4 d-flex">
-                        <div class="d-flex gap-4 phn">
-                            <a href="https://wa.me/+8801328453232" target="_blank">
-                                <img src="./images/icons/phone.svg" alt="phoneIcon">
-                            </a>
-                            <div class="txt">
-                                <h6>Phone</h6>
-                                <p>+8801328453232</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="email col-lg-4 d-flex">
-                        <div class="d-flex gap-4 eml">
-                            <a target="_blank" href="mailto:ilmedeenacademybd@gmail.com">
-                                <img src="./images/icons/email.svg" alt="emailIcon">
-                            </a>
-                            <div class="txt">
-                                <h6>Email</h6>
-                                <p>ilmedeenacademybd@gmail.com</p>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
+          <h3 class="text-center --main">আজই শুরু করুন আপনার ইসলামিক শিক্ষার যাত্রা</h3>
+          <p class="text-center --light">বিশ্বজুড়ে হাজারো শিক্ষার্থীর সঙ্গে আমরাও আপনাকে আমন্ত্রণ জানাচ্ছি—গুণগত মানসম্পন্ন শিক্ষার মাধ্যমে ইসলামের সাথে গভীর সম্পর্ক গড়ে তুলুন।</p>
+            
+          <div class="d-flex justify-content-center align-items-center py-5">
+            <a class="formBtn submit col-lg-3" href="contact.html">যোগাযোগ করুন</a>
+          </div>
 
         </div>
     </section>
@@ -656,18 +620,26 @@
                     <div class="col-lg-2 col-3 logos icons d-flex justify-content-center img-fluid d-lg-none">
                         <ul class="d-flex gap-4">
                             <li>
-                                <a href="https://www.facebook.com/share/14qof6xKRo/" target="_blank">
-                                    <i class="fa-brands fa-facebook-f"></i>
+                                <a href="https://www.facebook.com/share/14qof6xKRo/" target="_blank"
+                                    aria-label="Share on Facebook"></a>
+                                <span class="visually-hidden"></span>
+                                </a>
+                                <i class="fa-brands fa-facebook-f"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.facebook.com/share/14qof6xKRo/" target="_blank">
-                                    <i class="fa-brands fa-instagram"></i>
+                                <a href="https://www.facebook.com/share/14qof6xKRo/" target="_blank"
+                                    aria-label="Share on Facebook">
+                                    <span class="visually-hidden"></span>
+                                </a>
+                                <i class="fa-brands fa-instagram"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.facebook.com/share/14qof6xKRo/" target="_blank">
-                                    <i class="fa-brands fa-x-twitter"></i>
+                                <a href="https://www.facebook.com/share/14qof6xKRo/" target="_blank"
+                                    aria-label="Share on Facebook">
+                                </a>
+                                <i class="fa-brands fa-x-twitter"></i>
                                 </a>
                             </li>
                         </ul>
@@ -680,7 +652,7 @@
                         </h4>
                         <ul>
                             <li><a href="https://wa.me/+8801328453232" target="_blank">Contact us</a></li>
-                            <li><a href="https://www.facebook.com/share/14qof6xKRo/" target="_blank">Facebook</a></li>
+                            <li><a href="https://www.facebook.com/ilmedeenacademy/" target="_blank">Facebook</a></li>
                             <li><a href="https://wa.me/+8801328453232" target="_blank">Whatsapp</a></li>
                             <li><a href="#contact" target="_blank">Telegram</a></li>
                             <li><a href="https://wa.me/+8801328453232" target="_blank">Online Chat</a></li>
@@ -721,8 +693,8 @@
                     </p>
                     <ul class="d-flex gap-4">
                         <li>
-                            <a href="https://www.facebook.com/share/14qof6xKRo/ target=" _blank"">
-                                <i class="fa-brands fa-facebook-f"></i>
+                            <a href="https://www.facebook.com/ilmedeenacademy/" target=" _blank"">
+                                <i class=" fa-brands fa-facebook-f"></i>
                             </a>
                         </li>
                         <li>
@@ -776,7 +748,7 @@
             });
         });
 
-        
+
     </script>
 
     <!-- <script src="./js/bootstrap.min.js"></script> -->

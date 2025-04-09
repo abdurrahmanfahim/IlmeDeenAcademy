@@ -7,17 +7,17 @@ import { getAnalytics } from "firebase/analytics";
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-    apiKey: "AIzaSyBSTAGn5lgADakvtIZZ6eKXFSlQxv89peo",
-    authDomain: "taleemul-quran.firebaseapp.com",
-    projectId: "taleemul-quran",
-    storageBucket: "taleemul-quran.firebasestorage.app",
-    messagingSenderId: "152516080082",
-    appId: "1:152516080082:web:129246bfd9d897b59c180b",
-    measurementId: "G-C7K7MFYKBJ"
+    apiKey: "YOUR_NEW_API_KEY",
+    authDomain: "ilmedeenacademy.com",
+    projectId: "ilmedeenacademy",
+    storageBucket: "ilmedeenacademy.appspot.com",
+    messagingSenderId: "YOUR_NEW_MESSAGING_SENDER_ID",
+    appId: "YOUR_NEW_APP_ID",
+    measurementId: "YOUR_NEW_MEASUREMENT_ID"
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 
-alert('hi')
+alert('hi');
