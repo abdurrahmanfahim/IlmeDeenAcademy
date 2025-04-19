@@ -48,6 +48,12 @@ body {
   background: var(--body);
 }
 
+body::selection
+{
+  background: var(--light);
+  color: var(--body);
+}
+
 h2 {
   font-family: "Noto Sans Bengali";
   font-size: 34px;
@@ -295,16 +301,17 @@ h1 {
 #services .card {
   border-radius: 10px;
   background: #023440;
-  border: 2px solid var(--secondery);
+  /* border: 2px solid transparent; */
   overflow: hidden;
-  transition: all 0.4s ease-out;
+  transition: all 0.1s ease-out;
   /* transition: scale 0.4s ease-out; */
-
+  
 }
 
 #services .card:hover {
-  /* scale: 1.02; */
-}
+  /* border: 2px solid var(--secondery); */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}  
 
 #services .card .text {
   display: flex;
@@ -469,7 +476,7 @@ h1 {
   font-family: "Noto Sans Bengali";
   background: var(--main);
   padding: 42px 28px 52px;
-  transition: all linear 0.3s;
+  transition: all ease-in-out 0.3s;
   color: var(--secondery);
   cursor: pointer;
   justify-content: center;
@@ -602,7 +609,7 @@ h1 {
   border-radius: 15px;
   border: 2px solid var(--secondery);
   background: #023440;
-  transition: all linear 0.4s;
+  transition: all ease-in-out 0.3s;
 }
 
 .formBtn:hover {
@@ -683,6 +690,12 @@ option:hover
   font-style: normal;
   font-weight: 500;
   line-height: 27.2px;
+}
+
+.warn 
+{
+  font-size: 14px;
+  color: #023440;
 }
 
 /* Hide the spin buttons in WebKit browsers */
@@ -773,7 +786,7 @@ footer .logos ul li i {
   border-radius: 50%;
   color: var(--secondery);
   background: var(--light);
-  transition: all linear 0.2s;
+  transition: all ease-in-out 0.2s;
 }
 
 footer .logos ul li i:hover {
