@@ -363,7 +363,9 @@
     
   // ✅ সাবমিট বাটনের ক্লিক ইভেন্ট হ্যান্ডলিং
   document.querySelector('.submit').addEventListener('click', function (e) {
-    e.preventDefault(); // ফর্ম রিফ্রেশ বন্ধ রাখে
+    showAlert('warning', 'দয়া করে অপেক্ষা করুন।')
+    e.preventDefault();
+     // ফর্ম রিফ্রেশ বন্ধ রাখে
 
     // ✅ ফর্ম ডেটা সংগ্রহ
     const formData = {
