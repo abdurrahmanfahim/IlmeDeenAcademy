@@ -33,7 +33,7 @@
     <div class="container">
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-          <a class="navbar-brand" href="index.html#"><img class="logoImg" src="./images/logo.png" alt="logo"></a>
+          <a class="navbar-brand" href="index.html#"><img class="logoImg" src="./images/logos/logo.png" alt="logo"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -78,6 +78,19 @@
 
   <!-- ========= Contact Start ========= -->
 
+  <!-- SVG Icons for Alerts -->
+  <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+    <symbol id="check-circle-fill" viewBox="0 0 16 16">
+      <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+    </symbol>
+    <symbol id="exclamation-triangle-fill" viewBox="0 0 16 16">
+      <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+    </symbol>
+    <symbol id="info-fill" viewBox="0 0 16 16">
+      <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+    </symbol>
+  </svg>
+
   <section id="contact" class="container-fluid">
     <div class="container">
       <h2 class="text-center --light">রেজিস্ট্রেশন</h2>
@@ -85,12 +98,18 @@
 
       <div class="row justify-content-between">
 
-        <form class="col-lg-12 row gy-4" id="enrollmentForm" action="https://api.web3forms.com/submit" method="POST"
-          accept-charset="UTF-8">
+        <!-- <form class="col-lg-12 row gy-4" id="enrollmentForm" action="https://api.web3forms.com/submit" method="POST"
+          accept-charset="UTF-8"> -->
 
-          <input type="hidden" name="access_key" value="a8d47ba1-0fd6-41c8-ae56-9efd2c7b0262">
+        <form class="col-lg-12 row gy-4" id="registrationForm" action="javascript:void(0)">
 
+          <!-- main key -->
+          <!-- <input type="hidden" name="access_key" value="a8d47ba1-0fd6-41c8-ae56-9efd2c7b0262" value="New Student"> -->
+
+          <!-- dev test key -->
           <!-- <input type="hidden" name="access_key" value="3f433f51-da07-4096-b461-c0ce89f09e2f"> -->
+
+          <!-- <input type="hidden" name="access_key" value="9c990790-29d9-44b7-91d2-811e6caa24ab"> -->
 
           <div class="mb-6 col-lg-4">
             <label for="name" class="form-label">পূর্ণ নাম</label>
@@ -100,16 +119,16 @@
 
           <div class="mb-6 col-lg-4">
 
-            <label for="father's name" class="form-label">পিতার নাম</label>
-            <input type="text" placeholder="পিতার নাম লিখুন" class="form-control" id="father's name"
-              name="father's name" aria-describedby="emailHelp" required>
+            <label for="fatherName" class="form-label">পিতার নাম</label>
+            <input type="text" placeholder="পিতার নাম লিখুন" class="form-control" id="fatherName"
+              name="fatherName" aria-describedby="emailHelp" required>
           </div>
 
           <div class="mb-6 col-lg-4">
 
             <label for="phone" class="form-label">হোয়াটসঅ্যাপ নাম্বার <i
                 class="fa-brands fa-whatsapp fa-fw font-bold "></i></label>
-            <input type="number" placeholder="+000 000-0000-0000 (হোয়াটসঅ্যাপ)" class="form-control" id="phone"
+            <input type="text" placeholder="+000 000-0000-0000 (হোয়াটসঅ্যাপ)" class="form-control" id="phone"
               name="phone" required>
           </div>
 
@@ -190,7 +209,7 @@
               </p>
             </div>
 
-            <button class="formBtn submit col-lg-3">ফ্রি ক্লাসটি
+            <button type="button" class="formBtn submit col-lg-3">ফ্রি ক্লাসটি
               নিশ্চিত করুন
             </button>
           </div>
@@ -206,13 +225,18 @@
 
   <!-- ========= Contact End ========= -->
 
+
+
+
+
   <!-- ========= Footer Start ========= -->
 
   <footer id="footer" class="container-fluid footerBg">
     <div class="container">
       <div class="row gap-4 justify-content-between">
         <div class="col-lg-3 col-12 left row justify-content-between">
-          <a class="col-8 col-lg-12" href="index.html#"><img class="img-fluid" src="./images/logo.png" alt="logo2"></a>
+          <a class="col-8 col-lg-12" href="index.html#"><img class="img-fluid" src="./images/logos/logo-footer.png"
+              alt="logo2"></a>
           <div class="col-lg-2 col-3 logos icons d-flex justify-content-center img-fluid d-lg-none">
             <ul class="d-flex gap-4">
               <li>
@@ -334,6 +358,112 @@
       });
     });
 
+
+
+    
+  // ✅ সাবমিট বাটনের ক্লিক ইভেন্ট হ্যান্ডলিং
+  document.querySelector('.submit').addEventListener('click', function (e) {
+    e.preventDefault(); // ফর্ম রিফ্রেশ বন্ধ রাখে
+
+    // ✅ ফর্ম ডেটা সংগ্রহ
+    const formData = {
+      name: document.getElementById("name").value,
+      fatherName: document.getElementById("fatherName").value,
+      phone: document.getElementById("phone").value,
+      gender: document.getElementById("gender").value,
+      subject: document.getElementById("subject").value,
+      day: document.getElementById("day").value,
+      hours: document.getElementById("hours").value,
+      time: document.getElementById("time").value,
+      trial: document.getElementById("trial").value,
+      location: document.getElementById("location").value,
+      nation: document.getElementById("nation").value,
+      checkboxConfirmed: document.querySelector(".warn input").checked
+    };
+
+    // ✅ প্রয়োজনীয় ফিল্ড যাচাই
+    if (!formData.name.trim()) {
+      showAlert('warning', 'দয়া করে পূর্ণ নাম লিখুন');
+      return;
+    }
+    if (!formData.fatherName.trim()) {
+      showAlert('warning', 'দয়া করে পিতার নাম লিখুন');
+      return;
+    }
+    if (!formData.phone.trim()) {
+      showAlert('warning', 'দয়া করে হোয়াটসঅ্যাপ নাম্বার দিন');
+      return;
+    }
+    if (!formData.gender || formData.gender === '') {
+      showAlert('warning', 'দয়া করে লিঙ্গ নির্বাচন করুন');
+      return;
+    }
+    if (!formData.subject || formData.subject === '') {
+      showAlert('warning', 'দয়া করে বিষয় নির্বাচন করুন');
+      return;
+    }
+    if (!formData.day.trim()) {
+      showAlert('warning', 'দয়া করে সপ্তাহে কয় দিন ক্লাস করতে চান তা লিখুন');
+      return;
+    }
+    if (!formData.hours.trim()) {
+      showAlert('warning', 'দয়া করে প্রতিদিন কত ঘণ্টা পড়তে চান তা লিখুন');
+      return;
+    }
+
+    // ✅ চেকবক্স কনফার্মেশন যাচাই
+    if (!formData.checkboxConfirmed) {
+      showAlert("হোয়াটসঅ্যাপ নাম্বারটি সঠিক হয়ে থাকলে দয়া করে টিক দিন।");
+      // return;
+    }
+
+    // ✅ Google Apps Script API URL বসান নিচের স্থানে
+    const apiUrl = "https://script.google.com/macros/s/AKfycbyRTYX6-ot88oGUuuiq01hDlgUnZWDw6HWkqwDybluD4wZJ-iv6QCbrCBgO_UPZHz8PeA/exec";
+
+    // ✅ API-তে POST রিকোয়েস্ট পাঠানো
+    fetch(apiUrl, {
+      method: "POST",
+      body: JSON.stringify(formData)
+    })
+      .then(res => res.text()) // Google Apps Script সাধারণত text রিটার্ন করে
+      .then(data => {
+        showAlert('success', 'সফলভাবে পাঠানো হয়েছে!');
+        console.log("Server Response:", data);
+
+        // চাইলে ফর্ম রিসেট করুন:
+        document.getElementById("registrationForm").reset();
+      })
+      .catch(err => {
+        console.error("❌ সমস্যা হয়েছে:", err);
+        showAlert('danger', 'ফর্ম পাঠাতে সমস্যা হয়েছে। পরে আবার চেষ্টা করুন।');
+      });
+  });
+
+  // Function to show Bootstrap alerts
+  function showAlert(type, message) {
+    const alertContainer = document.createElement('div');
+    let iconType;
+    if (type === 'success') iconType = 'check-circle-fill';
+    else if (type === 'warning') iconType = 'info-fill';
+    else iconType = 'exclamation-triangle-fill';
+    
+    alertContainer.innerHTML = `
+      <div class="alert alert-${type} alert-dismissible fade show d-flex align-items-center" role="alert" style="position: fixed; top: 20px; left: 50%; transform: translateX(-50%); z-index: 9999; min-width: 300px;">
+        <svg class="bi flex-shrink-0 me-2 text-secondary" width="24" height="24" role="img" aria-label="${type}:"><use xlink:href="#${iconType}"/></svg>
+        <div>${message}</div>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+    `;
+    
+    document.body.appendChild(alertContainer);
+    
+    // Auto remove after 5 seconds
+    setTimeout(() => {
+      if (alertContainer.parentNode) {
+        alertContainer.remove();
+      }
+    }, 5000);
+  }
 
   </script>
 

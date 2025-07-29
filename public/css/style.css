@@ -1,30 +1,3 @@
-/*   
-  font-family: "Noto Sans Bengali", serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-*/
-
-/* 
-  font-family: "Poppins", serif; 
-  font-weight: 100;
-  font-style: normal;
-*/
-
-/* ============= Common css Start ============= */
-
-@font-face {
-  font-family: Noto Sans Bengali;
-  src: url('../fonts/NotoSansBengali-VariableFont_wdth\,wght.ttf');
-}
-/* @font-face {
-  font-family: Poppins;
-  src: url('../fonts/Poppins-Regular.ttf');
-  src: url('../fonts/Poppins-Medium.ttf');
-  src: url('../fonts/Poppins-Bold.ttf');
-  src: url('../fonts/Poppins-SemiBold.ttf');
-} */
-
 :root {
   --main: #023440;
   --secondery: #e0be74;
@@ -112,6 +85,17 @@ h3 {
   font-size: 14px;
 }
 
+.alert svg {
+  fill: var(--secondery) !important;
+}
+
+.alert svg {
+  fill: var(--secondery) !important;
+}
+
+.alert .btn-close {
+  filter: invert(1) sepia(1) saturate(5) hue-rotate(35deg) brightness(1.2);
+}
 
 .sticky-navbar {
   box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.25);
@@ -146,7 +130,7 @@ h3 {
 
 .button {
   border-radius: 15px;
-  border: 2px solid var(--secondery);
+  /* border: 2px solid var(--secondery); */
   background: var(--main);
   padding: 12px 24px;
   color: var(--secondery);
@@ -154,7 +138,7 @@ h3 {
 }
 
 .button:hover {
-  border: 2px solid var(--main);
+  /* border: 2px solid var(--main); */
   background: var(--secondery);
   color: var(--main);
 }
@@ -288,6 +272,8 @@ h1 {
   align-self: center;
   display: inline-block;
   margin-top: 10px;
+  border: 2px solid var(--secondery);
+  
 }
 
 /* ============= About End ============= */
@@ -454,7 +440,7 @@ h1 {
   position: absolute;
   top: 0;
   width: 100%;
-  border-radius: 12px;
+  border-radius: 10px;
 }
 
 /* ============= YouTube End ============= */
@@ -607,7 +593,7 @@ h1 {
   font-weight: 600;
   line-height: 20px;
   border-radius: 15px;
-  border: 2px solid var(--secondery);
+  /* border: 2px solid var(--secondery); */
   background: #023440;
   transition: all ease-in-out 0.3s;
 }
@@ -615,7 +601,7 @@ h1 {
 .formBtn:hover {
   color: var(--main);
   background: var(--secondery);
-  border: 2px solid var(--main);
+  /* border: 2px solid var(--main); */
 }
 
 .form-control {

@@ -1,0 +1,139 @@
+function doPost(e) {
+  try {
+    const sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
+    const data = JSON.parse(e.postData.contents);
+    
+    sheet.appendRow([
+      new Date(),
+      data.name || '',
+      data.fatherName || '',
+      data.phone || '',
+      data.gender || '',
+      data.subject || '',
+      data.day || '',
+      data.hours || '',
+      data.time || '',
+      data.trial || '',
+      data.location || '',
+      data.nation || '',
+      data.checkboxConfirmed ? 'Yes' : 'No'
+    ]);
+    
+    return ContentService.createTextOutput("Success");
+  } catch (error) {
+    return ContentService.createTextOutput("Error: " + error.toString());
+  }
+}
+
+
+
+// new 
+
+function doPost(e) {
+  try {
+    const ss = SpreadsheetApp.getActiveSpreadsheet();
+    let sheet = ss.getSheetByName("Ilm-e Deen Academy Student Entry List");
+    
+    if (!sheet) {
+      sheet = ss.getActiveSheet();
+    }
+    
+    const data = JSON.parse(e.postData.contents);
+    const timestamp = new Date();
+
+    sheet.appendRow([
+      timestamp,
+      data.name,
+      data.fatherName,
+      data.phone,
+      data.gender,
+      data.subject,
+      data.day,
+      data.hours,
+      data.time,
+      data.trial,
+      data.location,
+      data.nation,
+      data.checkboxConfirmed
+    ]);
+
+    const htmlBody = `
+    <h2>📥 নতুন রেজিস্ট্রেশন - Ilm-e Deen Academy</h2>
+    <table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; font-family: Arial, sans-serif;">
+      <tr style="background-color: #f2f2f2;">
+        <td><strong>Field</strong></td>
+        <td><strong>Value</strong></td>
+      </tr>
+      <tr>
+        <td>👤 পূর্ণ নাম:</td>
+        <td>${data.name}</td>
+      </tr>
+      <tr>
+        <td>👨‍👧 পিতার নাম:</td>
+        <td>${data.fatherName}</td>
+      </tr>
+      <tr>
+        <td>📱 হোয়াটসঅ্যাপ নাম্বার:</td>
+        <td>${data.phone}</td>
+      </tr>
+      <tr>
+        <td>⚧ লিঙ্গ:</td>
+        <td>${data.gender}</td>
+      </tr>
+      <tr>
+        <td>📚 যে কোন বিষয়ে পড়তে ইচ্ছুক:</td>
+        <td>${data.subject}</td>
+      </tr>
+      <tr>
+        <td>📆 সপ্তাহে যতদিন ক্লাস করতে চান:</td>
+        <td>${data.day}</td>
+      </tr>
+      <tr>
+        <td>⏰ প্রতিদিন যত ঘণ্টা পড়তে চান:</td>
+        <td>${data.hours}</td>
+      </tr>
+      <tr>
+        <td>🕒 পছন্দের সময়সূচি:</td>
+        <td>${data.time || 'Not specified'}</td>
+      </tr>
+      <tr>
+        <td>🎓 ফ্রি ট্রায়াল ক্লাস নিতে চান কিনা?</td>
+        <td>${data.trial}</td>
+      </tr>
+      <tr>
+        <td>🌍 বর্তমান অবস্থান:</td>
+        <td>${data.location || 'Not specified'}</td>
+      </tr>
+      <tr>
+        <td>🏳️ জাতীয়তা:</td>
+        <td>${data.nation}</td>
+      </tr>
+      <tr>
+        <td>✅ "হোয়াটসঅ্যাপ নাম্বারটি" সঠিক কিনা?</td>
+        <td>${data.checkboxConfirmed ? 'Yes' : 'No'}</td>
+      </tr>
+      <tr>
+        <td>📅 রেজিস্ট্রেশনের সময়সূচী:</td>
+        <td>${timestamp.toLocaleString()}</td>
+      </tr>
+    </table>
+    `;
+
+const recipients = [
+  "fahimahmad123go@gmail.com",
+  "abdurrahman123go@gmail.com",
+  "fahimabdurrahman.uimc.b3@gmail.com"
+];
+
+MailApp.sendEmail({
+  to: recipients.join(","),
+  subject: "📥 নতুন রেজিস্ট্রেশন - Ilm-e Deen Academy",
+  htmlBody: htmlBody
+});
+
+    return ContentService.createTextOutput("Success");
+
+  } catch (error) {
+    return ContentService.createTextOutput("Error: " + error.toString());
+  }
+}
