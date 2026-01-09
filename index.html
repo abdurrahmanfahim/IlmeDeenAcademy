@@ -1,21 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bn">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ilm-e Deen Academy - IDA - Online Islamic Education</title>
 
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="./css/style.css" as="style">
+    <link rel="preload" href="./images/logos/logo.png" as="image">
+    <link rel="preload" href="./fonts/SolaimanLipi_22-02-2012.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="preload"
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        as="style">
+
     <meta name="google-site-verification" content="Ejkmp35POKBdzSy6eDKTh4_8VZkl30skby0xf3pcSmU" />
+
     <!-- SEO Meta Tags -->
-    <meta name="title" content="Ilm-e Deen Academy - IDA - Online Islamic Education">
     <meta name="description"
         content="Ilm-e Deen Academy - IDA -  একটি অনলাইন ইসলামী শিক্ষা প্ল্যাটফর্ম, যা কুরআন, হাদিস, এবং ইসলামিক স্টাডিজ শেখায়। Ilm-e Deen Academy - IDA is an online Islamic education platform that teaches Quran, Hadith, and Islamic studies.">
     <meta name="keywords"
         content="ইসলামী শিক্ষা, কুরআন শিক্ষা, ইসলামিক কোর্স, অনলাইন শিক্ষা, ইসলামিক ভিডিও, অনলাইন মাদ্রাসা, ইসলামিক লার্নিং, অনলাইন কুরআন, ইসলামিক স্টাডিজ, Islamic education, Quran education, Islamic courses, online education, Islamic videos, online madrasa, Islamic learning, online Quran, Islamic studies">
     <meta name="author" content="Ilm-e Deen Academy - IDA">
     <meta name="robots" content="index, follow">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Open Graph Tags (For Social Sharing) -->
     <meta property="og:type" content="website">
@@ -43,55 +50,383 @@
     <meta name="revisit-after" content="7 days">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="./images/favicon/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="./images/favicon/favicon.ico">
+    <link rel="apple-touch-icon" href="./images/favicon/favicon.ico">
 
     <!-- Font Links -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
 
-    <!-- fontAwesome link -->
+    <!-- FontAwesome -->
     <link rel="stylesheet" href="./css/all.css">
 
-    <!-- Style Sheet -->
-    <!-- <link rel="stylesheet" href="./css/bootstrap.min.css"> -->
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./service-cards.css">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "EducationalOrganization",
+      "name": "Ilm-e Deen Academy - IDA",
+      "description": "একটি অনলাইন ইসলামী শিক্ষা প্ল্যাটফর্ম, যা কুরআন, হাদিস, এবং ইসলামিক স্টাডিজ শেখায়।",
+      "url": "https://ilmedeenacademy.com/",
+      "logo": "https://ilmedeenacademy.com/public/images/seo/logo.jpg",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+8801328453232",
+        "contactType": "Customer Service"
+      },
+      "sameAs": [
+        "https://www.facebook.com/ilmedeenacademy/"
+      ]
+    }
+    </script>
+
+    <style>
+        /* Soliman Lipi Font Face */
+        @font-face {
+            font-family: 'Soliman Lipi';
+            src: url('./fonts/SolaimanLipi_22-02-2012.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+        
+        @font-face {
+            font-family: 'Soliman Lipi';
+            src: url('./fonts/SolaimanLipi_Bold_10-03-12.ttf') format('truetype');
+            font-weight: bold;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        .skip-nav {
+            position: absolute;
+            top: -40px;
+            left: 6px;
+            background: #000;
+            color: #fff;
+            padding: 8px;
+            text-decoration: none;
+            z-index: 1000;
+        }
+
+        .skip-nav:focus {
+            top: 6px;
+        }
+
+        .notice-banner {
+            background: linear-gradient(135deg, #023440, #1c5b5e);
+            color: #e0be74;
+            border: none;
+            padding: 15px 20px;
+            margin: 0;
+            border-radius: 0;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .notice-banner i {
+            font-size: 20px;
+        }
+
+        .notice-banner strong {
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        /* Notice Banner Positioning */
+        .notice-banner {
+            position: relative;
+        }
+
+        /* Custom Close Button */
+        .custom-close {
+            position: absolute;
+            top: 50%;
+            right: 16px;
+            transform: translateY(-50%);
+            background: transparent;
+            border: none;
+            color: #e0be74;
+            font-size: 24px;
+            font-weight: bold;
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+
+        .custom-close:hover {
+            background: rgba(224, 190, 116, 0.2);
+            color: #fff;
+        }
+
+        .custom-close:focus {
+            outline: 2px solid #e0be74;
+            outline-offset: 2px;
+        }
+
+        /* Custom Notice Button */
+        .notice-contact-btn {
+            background: #e0be74;
+            color: #023440;
+            border: 2px solid #e0be74;
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: 14px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .notice-contact-btn:hover {
+            background: #625436;
+            color: #e0be74;
+            border-color: #625436;
+            transform: translateY(-1px);
+        }
+
+        .notice-contact-btn:focus {
+            outline: 2px solid #e0be74;
+            outline-offset: 2px;
+        }
+
+        /* Mobile UI/UX Improvements */
+        @media (max-width: 768px) {
+
+            /* Better touch targets */
+            .nav-link {
+                padding: 12px 16px !important;
+                font-size: 16px;
+                min-height: 44px;
+                display: flex;
+                align-items: center;
+            }
+
+            .button,
+            .btn {
+                min-height: 44px;
+                padding: 12px 24px;
+                font-size: 16px;
+                border-radius: 8px;
+            }
+
+            /* Improved spacing */
+            .container {
+                padding-left: 16px;
+                padding-right: 16px;
+            }
+
+            section {
+                padding: 40px 0;
+            }
+
+            /* Better typography */
+            h1 {
+                font-size: 1.75rem;
+                line-height: 1.3;
+                margin-bottom: 16px;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+                line-height: 1.3;
+                margin-bottom: 12px;
+            }
+
+            h3 {
+                font-size: 1.25rem;
+                line-height: 1.4;
+                margin-bottom: 12px;
+            }
+
+            p,
+            li {
+                font-size: 16px;
+                line-height: 1.6;
+                margin-bottom: 12px;
+            }
+
+            /* Card improvements */
+            .card {
+                margin-bottom: 20px;
+                border-radius: 12px;
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            }
+
+            /* Notice banner mobile */
+            .notice-banner {
+                padding: 12px 16px;
+            }
+
+            .notice-banner strong {
+                font-size: 14px;
+                line-height: 1.4;
+            }
+
+            .notice-banner .container {
+                flex-direction: column;
+                gap: 8px;
+            }
+
+            /* Navbar mobile */
+            .navbar-brand img {
+                max-height: 40px;
+            }
+
+            .navbar-toggler {
+                padding: 8px 12px;
+                border: none;
+                font-size: 1.2rem;
+            }
+
+            .navbar-collapse {
+                margin-top: 16px;
+                padding: 16px 0;
+                border-top: 1px solid rgba(255, 255, 255, 0.1);
+            }
+
+            /* Video responsive */
+            .iframe-container {
+                position: relative;
+                width: 100%;
+                height: 0;
+                padding-bottom: 56.25%;
+                margin: 20px 0;
+            }
+
+            .iframe-container iframe {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border-radius: 8px;
+            }
+
+            /* Accordion mobile */
+            .accordion-button {
+                padding: 16px;
+                font-size: 16px;
+                line-height: 1.4;
+            }
+
+            .accordion-body {
+                padding: 16px;
+                font-size: 16px;
+                line-height: 1.6;
+            }
+
+            /* Footer mobile */
+            .footer .list {
+                margin-bottom: 24px;
+            }
+
+            .footer ul li {
+                margin-bottom: 8px;
+            }
+
+            .footer ul li a {
+                padding: 8px 0;
+                display: block;
+                font-size: 16px;
+            }
+
+            /* Smooth scrolling */
+            html {
+                scroll-behavior: smooth;
+            }
+
+            /* Focus states */
+            .nav-link:focus,
+            .button:focus,
+            .btn:focus {
+                outline: 2px solid #007bff;
+                outline-offset: 2px;
+            }
+
+            /* Loading states */
+            img {
+                transition: opacity 0.3s ease;
+            }
+
+            img[loading="lazy"] {
+                opacity: 0;
+            }
+
+            img[loading="lazy"].loaded {
+                opacity: 1;
+            }
+        }
+
+        /* Touch device optimizations */
+        @media (hover: none) and (pointer: coarse) {
+            .card:hover {
+                transform: none;
+            }
+
+            .button:hover {
+                transform: none;
+            }
+
+            .nav-link:hover {
+                background-color: rgba(255, 255, 255, 0.1);
+                border-radius: 8px;
+            }
+        }
+    </style>
 </head>
 
 <body>
+    <!-- Skip Navigation -->
+    <a href="#main-content" class="skip-nav visually-hidden-focusable">Skip to main content</a>
 
     <!-- ========= Notice Start ========= -->
 
-    <div class="alert alert-dismissible fade show" role="alert"
-        style="background: linear-gradient(135deg, #023440, #1c5b5e); color: #e0be74; border: none; padding: 15px 20px; margin: 0; border-radius: 0; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-        <div class="container d-flex align-items-center justify-content-center gap-3 text-center">
-            <i class="fas fa-graduation-cap" style="font-size: 20px;"></i>
-            <strong style="font-size: 16px; font-weight: 600;">একটি ফ্রী ট্রায়াল ক্লাস পেতে এখনই যোগাযোগ করুন</strong>
-            <!-- <a href="https://wa.me/+8801328453232" target="_blank"
-                style="background: #e0be74; color: #023440; padding: 8px 16px; border-radius: 20px; text-decoration: none; font-weight: 600; font-size: 14px; transition: all 0.3s ease;"
-                onmouseover="this.style.background='#625436'; this.style.color='#e0be74'"
-                onmouseout="this.style.background='#e0be74'; this.style.color='#023440'">
+    <div class="alert alert-dismissible fade show notice-banner d-flex align-items-center" role="alert"
+        aria-live="polite">
+        <div class="container d-flex align-items-center justify-content-between gap-3 text-center w-100">
+            <i class="fas fa-graduation-cap d-none d-sm-inline" aria-hidden="true"></i>
+            <strong style="font-size: small;">ফ্রী ট্রায়াল ক্লাস পেতে এখনই যোগাযোগ করুন</strong>
+            <a href="https://wa.me/+8801328453232" class="notice-contact-btn d-none d-md-inline-flex" target="_blank"
+                rel="noopener">
+                <i class="fab fa-whatsapp" style="font-size: 16px;"></i>
                 যোগাযোগ করুন
-            </a> -->
+            </a>
         </div>
-        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"
-            style="filter: invert(1) sepia(1) saturate(5) hue-rotate(35deg) brightness(1.2);"></button>
+        <button type="button" class="custom-close" onclick="this.closest('.alert').remove()"
+            aria-label="বিজ্ঞাপ্তি বন্ধ করুন">
+            ×
+        </button>
     </div>
 
     <!-- ========= Notice End ========= -->
 
     <!-- ========= Navbar Start ========= -->
 
-    <header class="container-fluid sticky-navbar">
+    <header class="container-fluid sticky-navbar" role="banner">
         <div class="container">
-            <nav class="navbar navbar-expand-lg">
+            <nav class="navbar navbar-expand-lg" role="navigation" aria-label="Main navigation">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#"><img class="logoImg" src="./images/logos/logo.png" alt="logo"></a>
+                    <a class="navbar-brand" href="#" aria-label="Ilm-e Deen Academy Homepage">
+                        <img class="logoImg" src="./images/logos/logo.png" alt="Ilm-e Deen Academy Logo"
+                            loading="eager">
+                    </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="নেভিগেশন মেনু টগল করুন">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
@@ -125,9 +460,10 @@
                                     data-bs-target=".navbar-collapse.show">যোগাযোগ</a>
                             </li>
                         </ul>
-                        <a class="button callButton" href="https://wa.me/+8801328453232" target="_blank">
-                            <i class="fa-solid fa-phone"></i>
-                            <span class="visually-hidden">Contact Us</span>
+                        <a class="button callButton" href="https://wa.me/+8801328453232" target="_blank"
+                            aria-label="WhatsApp এ যোগাযোগ করুন" rel="noopener">
+                            <i class="fa-solid fa-phone" aria-hidden="true"></i>
+                            <span class="visually-hidden">WhatsApp এ যোগাযোগ করুন</span>
                         </a>
                     </div>
                 </div>
@@ -139,532 +475,459 @@
 
     <!-- ========= Banner Start ========= -->
 
-    <section id="banner" class="container-fluid">
-        <div class="container">
-            <div class="row justify-content-between align-items-center gap-lg-0 gap-5 flex-wrap-reverse">
-                <div class="col-lg-4 col-12 d-flex justify-content-center">
-                    <img class="img-fluid" src="./images/banner.webp" alt="bannerImg">
-                </div>
-                <div class="col-lg-6 col-12 pb-lg-0 pb-4">
-                    <div class="d-flex flex-column">
-                        <div class="tasmiyah d-flex justify-content-center">
-                            <img class="bismillah img-fluid" src="./images/bismillah-golden.svg" alt="bismillah">
-                        </div>
-                        <div class="bannerText pt-lg-5 pt-4">
-                            <main>
-                                <h1>
+    <main id="main-content">
+        <section id="banner" class="container-fluid" aria-labelledby="hero-heading">
+            <div class="container">
+                <div class="row justify-content-between align-items-center gap-lg-0 gap-5 flex-wrap-reverse">
+                    <div class="col-lg-4 col-12 d-flex justify-content-center">
+                        <img class="img-fluid" src="./images/banner.webp" alt="ইসলামী শিক্ষার্থীরা কুরআন অধ্যয়ন করছেন"
+                            loading="lazy">
+                    </div>
+                    <div class="col-lg-6 col-12 pb-lg-0 pb-4">
+                        <div class="d-flex flex-column">
+                            <div class="tasmiyah d-flex justify-content-center">
+                                <img class="bismillah img-fluid" src="./images/bismillah-golden.svg"
+                                    alt="বিসমিল্লাহির রাহমানির রাহিম" loading="lazy">
+                            </div>
+                            <div class="bannerText pt-lg-5 pt-4">
+                                <h1 id="hero-heading">
                                     Ilm-e Deen Academy - IDA
-                                    <p style="display: none;">
+                                    <span class="visually-hidden">
                                         একটি বিশ্বস্ত অনলাইন প্ল্যাটফর্ম যেখানে আপনি সহজেই ইসলামী শিক্ষা পেতে পারেন।
                                         Ilm-e Deen Academy - IDA is a trusted online platform where you can easily get
                                         Islamic education.
-                                    </p>
+                                    </span>
                                 </h1>
-                            </main>
-                            <p>
-                                একটি অনলাইনভিত্তিক ইসলামী স্কুল
+                                <p>
+                                    একটি অনলাইনভিত্তিক ইসলামী স্কুল
+                                </p>
+                                <ul>
+                                    <li>
+                                        Live private and group classes.
+                                    </li>
+                                    <li>
+                                        Qualified, hand-picked male and female tutors.
+                                    </li>
+                                    <li>
+                                        A variety of Quranic and Islamic education to choose from.
+                                    </li>
+                                </ul>
+                                <a class="button bannerCall" href="contact.html" aria-label="যোগাযোগ পাতায় যান">Contact
+                                    Us</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <div class="container-fluid lineBox" aria-hidden="true">
+        </div>
+
+        <!-- ========= About Start ========= -->
+
+        <section id="about" class="container-fluid" aria-labelledby="about-heading">
+            <div class="container">
+                <div class="row flex-wrap-reverse justify-content-between align-items-center gap-5">
+                    <div class="left col-lg-6 col-12 col-md-12 d-flex justify-content-center">
+                        <div class="left-a d-flex img-fluid">
+                            <img class="img-fluid left-b" src="./images/aboutImg/open.webp" alt="খোলা কুরআনের বই"
+                                loading="lazy">
+                            <div class="left-c d-flex flex-column">
+                                <img class="img-fluid left-d" src="./images/aboutImg/rehal.webp" alt="কুরআনের রেহাল"
+                                    loading="lazy">
+                                <img class="img-fluid left-e" src="./images/aboutImg/quran.webp" alt="পবিত্র কুরআন"
+                                    loading="lazy">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right col-12 col-lg-5 col-md-12 mt-lg-auto  pb-lg-0 pb-4">
+                        <div class="txt">
+                            <h2 id="about-heading" class="--secondery">পরিচিতি</h2>
+                            <h3 class="--body">
+                                ইলমে দ্বীন একাডেমি: এক নতুন দিগন্তের সূচনা
+                            </h3>
+                            <p>আলহামদুলিল্লাহ! এখন সময় ও স্থানের সীমাবদ্ধতা ছাড়াই যেকোনো স্থান থেকে
+                                <span><strong style="font-weight: 400;">কুরআন শেখা</strong></span>
+                                সম্ভব। ইলমে দ্বীন একাডেমি
+                                আপনাকে
+                                <span> <strong style="font-weight: 400;">সহিহ কুরআন শিক্ষা, হিফয ও আরবি
+                                        ভাষা</strong></span>
+                                শেখার সুযোগ দিচ্ছে। <br>
+                                আমাদের <span><strong style="font-weight: 400;">প্রশিক্ষিত শিক্ষক
+                                        প্যানেলে</strong></span>
+                                রয়েছেন <span><strong style="font-weight: 400;">মিশরের আল-আজহার বিশ্ববিদ্যালয়ের
+                                        ছাত্র/ছাত্রী,
+                                        দক্ষ হাফেজ, ক্বারি ও মাওলানা</strong></span>।
                             </p>
+
                             <ul>
-                                <li>
-                                    Live private and group classes.
-                                </li>
-                                <li>
-                                    Qualified, hand-picked male and female tutors.
-                                </li>
-                                <li>
-                                    A variety of Quranic and Islamic education to choose from.
-                                </li>
+                                <li>শিশু ও প্রাপ্তবয়স্কদের জন্য পৃথক ক্লাস</li>
+                                <li>নারী-পুরুষের জন্য পৃথক শিক্ষক</li>
+                                <li>বহুভাষায় পাঠদান</li>
                             </ul>
-                            <a class="button bannerCall" href="contact.html">Contact Us</a>
+
+                            <p>জাযাকুমুল্লাহু খাইরান।</p>
+
+                            <a class="button aboutCall" href="contact.html"
+                                aria-label="আজই শুরু করুন - যোগাযোগ পাতায় যান">আজই শুরু করুন</a>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <div class="container-fluid lineBox">
-    </div>
+        <!-- ========= Services Start ========= -->
 
-    <!-- ========= Banner End ========= -->
-
-    <!-- ========= Abour Start ========= -->
-
-    <section id="about" class="container-fluid">
-        <div class="container">
-            <div class="row flex-wrap-reverse justify-content-between align-items-center gap-5">
-                <div class="left col-lg-6 col-12 col-md-12 d-flex justify-content-center">
-                    <div class="left-a d-flex img-fluid">
-                        <!-- <div class="left-b"></div> -->
-                        <img class="img-fluid left-b" src="./images/aboutImg/open.webp" alt="">
-                        <div class="left-c d-flex flex-column">
-                            <!-- <div class="left-d"></div> -->
-                            <!-- <div class="left-e"></div> -->
-                            <img class="img-fluid left-d" src="./images/aboutImg/rehal.webp" alt="">
-                            <img class="img-fluid left-e" src="./images/aboutImg/quran.webp" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="right col-12 col-lg-5 col-md-12 mt-lg-auto  pb-lg-0 pb-4">
-                    <div class="txt">
-                        <h2 class="--secondery">পরিচিতি</h2>
-                        <h3 class="--body">
-                            ইলমে দ্বীন একাডেমি: এক নতুন দিগন্তের সূচনা
-                        </h3>
-                        <p>আলহামদুলিল্লাহ! এখন সময় ও স্থানের সীমাবদ্ধতা ছাড়াই যেকোনো স্থান থেকে
-                            <span><strong style="font-weight: 400;">কুরআন শেখা</strong></span>
-                            সম্ভব। ইলমে দ্বীন একাডেমি
-                            আপনাকে
-                            <span> <strong style="font-weight: 400;">সহিহ কুরআন শিক্ষা, হিফয ও আরবি ভাষা</strong></span>
-                            শেখার সুযোগ দিচ্ছে। <br>
-                            আমাদের <span><strong style="font-weight: 400;">প্রশিক্ষিত শিক্ষক প্যানেলে</strong></span>
-                            রয়েছেন <span><strong style="font-weight: 400;">মিশরের আল-আজহার বিশ্ববিদ্যালয়ের ছাত্র/ছাত্রী,
-                                    দক্ষ হাফেজ, ক্বারি ও মাওলানা</strong></span>।
-                        </p>
-
-                        <ul>
-                            <li>শিশু ও প্রাপ্তবয়স্কদের জন্য পৃথক ক্লাস</li>
-                            <li>নারী-পুরুষের জন্য পৃথক শিক্ষক</li>
-                            <li>বহুভাষায় পাঠদান</li>
-                        </ul>
-
-                        <p>জাযাকুমুল্লাহু খাইরান।</p>
-
-                        <a class="button aboutCall" href="contact.html">আজই শুরু করুন</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ========= Abour End ========= -->
-
-    <!-- ========= services Start ========= -->
-
-    <section id="services" class="container-fluid">
-        <div class="container">
-            <h2 class="--light">সেবাসমূহ</h2>
-            <h3 class="--main">
-                আমাদের প্রতিষ্ঠানে যা যা শিখতে পারবেন
-            </h3>
-            <div class="row justify-content-between align-items-center gy-4">
-                <div class="col-xl-4 col-md-6 d-flex justify-content-center">
-                    <div class="card d-flex">
-                        <img class="img-fluid" src="./images/card2.webp" alt="card2">
-                        <div class="text --secondery">
-                            <div class="txt">
-                                <h4>
-                                    <strong>সহিহ কোরআন শিক্ষা</strong>
-                                </h4>
-                                <ul class="list-unstyled">
-                                    <li>
-                                        <i class="fa-solid fa-check"></i>
-                                        মাখরাজ
-                                    </li>
-                                    <li>
-                                        <i class="fa-solid fa-check"></i>
-                                        তাজবীদ
-                                    </li>
-                                    <li>
-                                        <i class="fa-solid fa-check"></i>
-                                        সিফাত
-                                    </li>
-                                    <li>
-                                        <i class="fa-solid fa-check"></i>
-                                        নাজরানা
-                                    </li>
-                                    <li>
-                                        <i class="fa-solid fa-check"></i>
-                                        মাসনুন দোয়া
-                                    </li>
-                                    <li>
-                                        <i class="fa-solid fa-check"></i>
-                                        প্রয়োজনীয় মাসআলা মাসায়েল
-                                    </li>
-                                    <li>
-                                        <i class="fa-solid fa-check"></i>
-                                        প্রয়োজনীয় আয়াত / সুরাহ
-                                    </li>
-                                    <li>
-                                        <i class="fa-solid fa-check"></i>
-                                        ২৪/৭ WhatsApp এ সাপোর্ট
-                                    </li>
+        <section id="services" class="container-fluid">
+            <div class="container">
+                <h2 class="--light">সেবাসমূহ</h2>
+                <h3 class="--main  mb-8">
+                    আমাদের প্রতিষ্ঠানে যা যা শিখতে পারবেন
+                </h3>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="service-card">
+                            <div class="service-header">
+                                <div class="service-icon">
+                                    <i class="fas fa-book-quran"></i>
+                                </div>
+                                <h4>সহিহ কোরআন শিক্ষা 1</h4>
+                            </div>
+                            <div class="service-body">
+                                <ul class="service-features">
+                                    <li><i class="fas fa-check-circle"></i>মাখরাজ</li>
+                                    <li><i class="fas fa-check-circle"></i>তাজবীদ</li>
+                                    <li><i class="fas fa-check-circle"></i>সিফাত</li>
+                                    <li><i class="fas fa-check-circle"></i>নাজরানা</li>
+                                    <li><i class="fas fa-check-circle"></i>মাসনুন দোয়া</li>
+                                    <li><i class="fas fa-check-circle"></i>প্রয়োজনীয় মাসআলা মাসায়েল</li>
+                                    <li><i class="fas fa-check-circle"></i>প্রয়োজনীয় আয়াত / সুরাহ</li>
+                                    <li><i class="fas fa-check-circle"></i>২৪/৭ WhatsApp এ সাপোর্ট</li>
                                 </ul>
                             </div>
-                            <div class="butn">
-                                <a class="button cardCall" href="contact.html">শুরু
-                                    করুন</a>
+                            <div class="service-footer">
+                                <a href="contact.html" class="service-btn">শুরু করুন</a>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-xl-4 col-md-6 d-flex justify-content-center">
-                    <div class="card d-flex">
-                        <img class="img-fluid" src="./images/card1.webp" alt="card1">
-                        <div class="text --secondery">
-                            <div class="txt">
-                                <h4>
-                                    <strong>হিফযুল কোরআন</strong>
-                                </h4>
-                                <ul class="list-unstyled">
-                                    <li>
-                                        <i class="fa-solid fa-check"></i>
-                                        সম্পূর্ণ কোরআন সহিহ শুদ্ধধভাবে হিফয
-                                    </li>
-                                    <li>
-                                        <i class="fa-solid fa-check"></i>
-                                        মাখরাজ
-                                    </li>
-                                    <li>
-                                        <i class="fa-solid fa-check"></i>
-                                        তাজবীদ
-                                    </li>
-                                    <li>
-                                        <i class="fa-solid fa-check"></i>
-                                        সিফাত
-                                    </li>
-                                    <li>
-                                        <i class="fa-solid fa-check"></i>
-                                        নাজরানা
-                                    </li>
-                                    <li>
-                                        <i class="fa-solid fa-check"></i>
-                                        প্রয়োজনীয় মাসআলা মাসায়েল
-                                    </li>
-                                    <li>
-                                        <i class="fa-solid fa-check"></i>
-                                        ২৪/৭ WhatsApp এ সাপোর্ট
-                                    </li>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="service-card featured">
+                            <div class="service-badge">জনপ্রিয়</div>
+                            <div class="service-header">
+                                <div class="service-icon">
+                                    <i class="fas fa-book-open"></i>
+                                </div>
+                                <h4>হিফযুল কোরআন</h4>
+                            </div>
+                            <div class="service-body">
+                                <ul class="service-features">
+                                    <li><i class="fas fa-check-circle"></i>সম্পূর্ণ কোরআন সহিহ শুদ্ধধভাবে হিফয</li>
+                                    <li><i class="fas fa-check-circle"></i>মাখরাজ</li>
+                                    <li><i class="fas fa-check-circle"></i>তাজবীদ</li>
+                                    <li><i class="fas fa-check-circle"></i>সিফাত</li>
+                                    <li><i class="fas fa-check-circle"></i>নাজরানা</li>
+                                    <li><i class="fas fa-check-circle"></i>প্রয়োজনীয় মাসআলা মাসায়েল</li>
+                                    <li><i class="fas fa-check-circle"></i>২৪/৭ WhatsApp এ সাপোর্ট</li>
                                 </ul>
                             </div>
-                            <div class="butn">
-                                <a class="button cardCall" href="contact.html">শুরু
-                                    করুন</a>
+                            <div class="service-footer">
+                                <a href="contact.html" class="service-btn">শুরু করুন</a>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-xl-4 col-md-6 d-flex justify-content-center">
-                    <div class="card d-flex">
-                        <img class="img-fluid" src="./images/card3.webp" alt="card3">
-                        <div class="text --secondery">
-                            <div class="txt">
-                                <h4>
-                                    <strong>আরবি ভাষা শিক্ষা</strong>
-                                </h4>
-                                <ul class="list-unstyled">
-                                    <li>
-                                        <i class="fa-solid fa-check"></i>
-                                        মাখরাজ
-                                    </li>
-                                    <li>
-                                        <i class="fa-solid fa-check"></i>
-                                        তাজবীদ
-                                    </li>
-                                    <li>
-                                        <i class="fa-solid fa-check"></i>
-                                        সিফাত
-                                    </li>
-                                    <li>
-                                        <i class="fa-solid fa-check"></i>
-                                        নাজরানা
-                                    </li>
-                                    <li>
-                                        <i class="fa-solid fa-check"></i>
-                                        Hedayatun Nahu (Arabic-Bangla)
-                                    </li>
-                                    <li>
-                                        <i class="fa-solid fa-check"></i>
-                                        Mijanus-sarf-and-Munshaib
-                                    </li>
-                                    <li>
-                                        <i class="fa-solid fa-check"></i>
-                                        Essential Tamrinaat
-                                    </li>
-                                    <li>
-                                        <i class="fa-solid fa-check"></i>
-                                        ২৪/৭ WhatsApp এ সাপোর্ট
-                                    </li>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="service-card">
+                            <div class="service-header">
+                                <div class="service-icon">
+                                    <i class="fas fa-language"></i>
+                                </div>
+                                <h4>আরবি ভাষা শিক্ষা</h4>
+                            </div>
+                            <div class="service-body">
+                                <ul class="service-features">
+                                    <li><i class="fas fa-check-circle"></i>মাখরাজ</li>
+                                    <li><i class="fas fa-check-circle"></i>তাজবীদ</li>
+                                    <li><i class="fas fa-check-circle"></i>সিফাত</li>
+                                    <li><i class="fas fa-check-circle"></i>নাজরানা</li>
+                                    <li><i class="fas fa-check-circle"></i>Hedayatun Nahu (Arabic-Bangla)</li>
+                                    <li><i class="fas fa-check-circle"></i>Mijanus-sarf-and-Munshaib</li>
+                                    <li><i class="fas fa-check-circle"></i>Essential Tamrinaat</li>
+                                    <li><i class="fas fa-check-circle"></i>২৪/৭ WhatsApp এ সাপোর্ট</li>
                                 </ul>
                             </div>
-                            <div class="butn">
-                                <a class="button cardCall" href="contact.html">শুরু
-                                    করুন</a>
+                            <div class="service-footer">
+                                <a href="contact.html" class="service-btn">শুরু করুন</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- ========= services End ========= -->
 
-    <!-- ========= YouTube Start ========= -->
+        <!-- ========= YouTube Start ========= -->
 
-    <section id="youTube" class="container-fluid">
-        <div class="container">
-
-            <!-- <div class="iframe-container" style="margin: 0 auto;  border: 5px solid #002221;
-                box-shadow: 2px 2px 117px -13px black; border-radius: 13px;">
-                <iframe width="100%" height="100%" src="./videos/test.mp4" frameborder="0"
-                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" loading="lazy"
-                    allowfullscreen="" title="YouTube video: Learning Quran for All">
-                </iframe>
-            </div> -->
-
-            <div class="iframe-container" style="margin: 0 auto;  border: 5px solid #002221;
-                box-shadow: 2px 2px 117px -13px black; border-radius: 13px;">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/DXY2OOHMHq8?si=Q8VrI0hMeBgiPYmj"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <section id="youTube" class="container-fluid" aria-labelledby="video-heading">
+            <div class="container">
+                <h2 id="video-heading" class="visually-hidden">প্রতিষ্ঠানের পরিচিতি ভিডিও</h2>
+                <div class="iframe-container video-wrapper"
+                    style="margin: 0 auto; border: 5px solid #002221; box-shadow: 2px 2px 117px -13px black; border-radius: 13px;">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/DXY2OOHMHq8?si=Q8VrI0hMeBgiPYmj"
+                        title="ইলমে দ্বীন একাডেমি পরিচিতি ভিডিও" frameborder="0" loading="lazy"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
             </div>
+        </section>
 
-            <!-- <img class="img-fluid rounded-4" style=" border: 5px solid #20251a;
-    box-shadow: 2px 2px 117px -13px black;" src="./images/posters/কুরআন লার্নিং ফর অল.png"
-                alt="poster: learning quaran for all"> -->
+        <!-- ========= Activities Start ========= -->
 
-        </div>
-    </section>
-
-    <!-- ========= YouTube End ========= -->
-
-    <!-- ========= Activities Start ========= -->
-
-    <section id="activities" class="container-fluid">
-        <div class="container">
-            <h2 class="--light">কার্যক্রম</h2>
-            <h3 class="--main">
-                আমাদের কার্যক্রমসমূহ
-            </h3>
-            <div class="row card-box">
-                <div class="col-xl-3  col-sm-6 col-12 d-flex justify-content-center">
-                    <div class="card d-flex">
-                        <div class="icon d-flex">
-                            <img src="./images/icons/quan-main.svg" class="hover-image hover-image-1" alt="">
-                            <img src="./images/icons/quan-sec.svg" class="base-image base-image-1" alt="">
-                        </div>
-                        <h5>
-                            আল কুরআনের দারস
-                        </h5>
-                        <p>
-                            আলহামদুলিল্লাহ আমরা শিশু থেকে প্রাপ্ত বয়স্ক সবার জন্যে কুরআন শিক্ষার আয়োজন করেছি। এ মহৎ
-                            কাজে আপনিও অংশগ্রহন করতে পারেন।
-                        </p>
+        <section id="activities" class="container-fluid" aria-labelledby="activities-heading">
+            <div class="container">
+                <h2 id="activities-heading" class="--light">কার্যক্রম</h2>
+                <h3 class="--main">
+                    আমাদের কার্যক্রমসমূহ
+                </h3>
+                <div class="row card-box">
+                    <div class="col-xl-3 col-sm-6 col-12 d-flex justify-content-center">
+                        <article class="card d-flex">
+                            <div class="icon d-flex">
+                                <img src="./images/icons/quan-main.svg" class="hover-image hover-image-1"
+                                    alt="কুরআন আইকন" loading="lazy">
+                                <img src="./images/icons/quan-sec.svg" class="base-image base-image-1" alt="কুরআন আইকন"
+                                    loading="lazy">
+                            </div>
+                            <h5>
+                                আল কুরআনের দারস
+                            </h5>
+                            <p>
+                                আলহামদুলিল্লাহ আমরা শিশু থেকে প্রাপ্ত বয়স্ক সবার জন্যে কুরআন শিক্ষার আয়োজন করেছি। এ
+                                মহৎ
+                                কাজে আপনিও অংশগ্রহন করতে পারেন।
+                            </p>
+                        </article>
+                    </div>
+                    <div class="col-xl-3 col-sm-6 col-12 d-flex justify-content-center">
+                        <article class="card d-flex">
+                            <div class="icon d-flex">
+                                <img src="./images/icons/pray-main.svg" class="hover-image hover-image-1"
+                                    alt="নামাজ আইকন" loading="lazy">
+                                <img src="./images/icons/pray-sec.svg" class="base-image base-image-1" alt="নামাজ আইকন"
+                                    loading="lazy">
+                            </div>
+                            <h5>
+                                ইসলামিক আকিদা
+                            </h5>
+                            <p>
+                                আমরা ইসলামের মৌলিক আকিদা শেখাই, যাতে একজন মুসলিম ইসলাম সম্পর্কে আরও গভীর ও বিস্তৃতভাবে
+                                জ্ঞান
+                                অর্জন করতে পারে।
+                            </p>
+                        </article>
+                    </div>
+                    <div class="col-xl-3 col-sm-6 col-12 d-flex justify-content-center">
+                        <article class="card d-flex">
+                            <div class="icon d-flex">
+                                <img src="./images/icons/dua-main.svg" class="hover-image hover-image-1"
+                                    alt="দোয়া আইকন" loading="lazy">
+                                <img src="./images/icons/dua-sec.svg" class="base-image base-image-1" alt="দোয়া আইকন"
+                                    loading="lazy">
+                            </div>
+                            <h5>
+                                ইসলামিক এক্টিভিটি
+                            </h5>
+                            <p>
+                                আমরা ইসলামের সৌন্দর্য ছড়িয়ে দেওয়ার লক্ষ্যে মুসলিম কমিউনিটিতে দাওয়াহ ও সচেতনতা
+                                সৃষ্টির
+                                কাজ করে যাচ্ছি।
+                            </p>
+                        </article>
+                    </div>
+                    <div class="col-xl-3 col-sm-6 col-12 d-flex justify-content-center">
+                        <article class="card d-flex">
+                            <div class="icon d-flex">
+                                <img src="./images/icons/bulb-main.svg" class="hover-image hover-image-1"
+                                    alt="আইডিয়া আইকন" loading="lazy">
+                                <img src="./images/icons/bulb-sec.svg" class="base-image base-image-1"
+                                    alt="আইডিয়া আইকন" loading="lazy">
+                            </div>
+                            <h5>
+                                মানবিক সেবা
+                            </h5>
+                            <p>
+                                আমরা ধীরে ধীরে মানবিক সেবার দিকে এগোচ্ছি। দারিদ্র বিমোচন, ইয়াতিমের ভরণপোষণ, অতিদরিদ্র
+                                মেয়েদের বিবাহ এবং গৃহহীনদের ঘর নির্মাণ।
+                            </p>
+                        </article>
                     </div>
                 </div>
-                <div class="col-xl-3 col-sm-6 col-12 d-flex justify-content-center">
-                    <div class="card d-flex">
-                        <div class="icon d-flex">
-                            <img src="./images/icons/pray-main.svg" class="hover-image hover-image-1" alt="">
-                            <img src="./images/icons/pray-sec.svg" class="base-image base-image-1" alt="">
+            </div>
+        </section>
+
+        <!-- ========= FAQ Start ========= -->
+
+        <section id="asked" class="container-fluid" aria-labelledby="faq-heading">
+            <div class="container">
+                <h2 id="faq-heading" class="text-center --secondery">সাধারণ জিজ্ঞাসা (FAQ)</h2>
+                <div class="accordion accordion-flush" id="accordionFlushExample" role="region"
+                    aria-labelledby="faq-heading">
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                aria-controls="flush-collapseOne">
+                                ❖ কিভাবে আমাদের ক্লাস পরিচালিত হয়?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">আমাদের লাইভ ওয়ান-টু-ওয়ান ক্লাস Zoom অ্যাপের মাধ্যমে পরিচালিত
+                                হয়,
+                                যেখানে আপনি সরাসরি উস্তাদের কাছ থেকে কুরআন শিক্ষা নিতে পারবেন। ক্লাসে যোগদান সহজ করার
+                                জন্য
+                                সকল ডিভাইসের জন্য ভিডিও টিউটোরিয়াল এবং আইটি এক্সপার্ট সাপোর্ট রয়েছে।</div>
                         </div>
-                        <h5>
-                            ইসলামিক আকিদা
-                        </h5>
-                        <p>
-                            আমরা ইসলামের মৌলিক আকিদা শেখাই, যাতে একজন মুসলিম ইসলাম সম্পর্কে আরও গভীর ও বিস্তৃতভাবে জ্ঞান
-                            অর্জন করতে পারে।
-                        </p>
                     </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                aria-controls="flush-collapseTwo">
+                                ❖ কিভাবে ফ্রি ট্রায়াল ক্লাস গ্রহণ করবেন?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">আমাদের ওয়েবসাইটে ফ্রি ট্রায়াল ক্লাসের ফর্ম রয়েছে। ফর্মটি পূরণ
+                                করে
+                                সাবমিট করার পর, আমাদের একজন দ্বীনী ভাই আপনার সাথে যোগাযোগ করবেন এবং প্রয়োজনীয় তথ্য
+                                দিয়ে
+                                আপনাকে
+                                ক্লাসে অংশগ্রহণ করতে সহায়তা করবেন।</div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                aria-controls="flush-collapseThree">
+                                ❖ কেন ফ্রি ট্রায়াল ক্লাসের ব্যবস্থা রাখা হয়েছে?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">আমাদের লক্ষ্য হল আপনাকে সঠিক শিক্ষকের সাথে যুক্ত করা। ট্রায়াল
+                                ক্লাসের মাধ্যমে আপনি আমাদের সম্মানিত উস্তাদের সাথে পরিচিত হতে পারবেন এবং কুরআন শেখার
+                                যাত্রা
+                                শুরু করতে পারবেন, ইনশাআল্লাহ। যদি ট্রায়াল ক্লাসে আপনার শিক্ষক পছন্দ না হয়, তবে আমাদের
+                                জানান—আমরা আপনার জন্য আরও উপযুক্ত শিক্ষক নিযুক্ত করব।</div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseFour" aria-expanded="false"
+                                aria-controls="flush-collapseFour">
+                                ❖ আপনাদের হাদিয়ার পরিমাণ কত?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseFour" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">আমাদের হাদিয়ার পরিমাণ নির্ধারিত হয় ক্লাসের সময় ও সপ্তাহে
+                                কয়দিন ক্লাস
+                                করবেন তার ওপর ভিত্তি করে। বিস্তারিত জানতে, আমাদের WhatsApp-এ মেসেজ করুন।</div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseFive" aria-expanded="false"
+                                aria-controls="flush-collapseFive">
+                                ❖ ট্রায়াল ক্লাস শেষে আপনাকে কী করতে হবে?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseFive" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">আপনার ট্রায়াল ক্লাস শেষ হলে, আমরা পুনরায় আপনার সাথে যোগাযোগ
+                                করব এবং
+                                জানতে চাইব—<br>
+                                ✅ আপনি কত সময় ধরে ক্লাস নিতে চান<br>
+                                ✅ সপ্তাহে কয়দিন ক্লাস করতে চান<br>
+                                ✅ আপনি কী শিখতে চান<br>
+
+                                এরপর, আমরা আপনাকে হাদিয়ার পরিমাণ জানিয়ে দেব। সব ঠিক থাকলে, আল্লাহর ইচ্ছায় আপনার কুরআন
+                                শেখার
+                                যাত্রা শুরু হবে।</div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseSix" aria-expanded="false"
+                                aria-controls="flush-collapseSix">
+                                ❖ কিভাবে পেমেন্ট করতে হবে?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseSix" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">আলহামদুলিল্লাহ, আপনি আমাদের ব্যাংক অ্যাকাউন্টে অথবা বিকাশ/নগদ এর
+                                মাধ্যমে পেমেন্ট করতে পারবেন। বিস্তারিত তথ্যের জন্য WhatsApp-এ যোগাযোগ করুন। </div>
+                        </div>
+                    </div>
+
                 </div>
-                <div class="col-xl-3 col-sm-6 col-12 d-flex justify-content-center">
-                    <div class="card d-flex">
-                        <div class="icon d-flex">
-                            <img src="./images/icons/dua-main.svg" class="hover-image hover-image-1" alt="">
-                            <img src="./images/icons/dua-sec.svg" class="base-image base-image-1" alt="">
-                        </div>
-                        <h5>
-                            ইসলামিক এক্টিভিটি
-                        </h5>
-                        <p>
-                            আমরা ইসলামের সৌন্দর্য ছড়িয়ে দেওয়ার লক্ষ্যে মুসলিম কমিউনিটিতে দাওয়াহ ও সচেতনতা সৃষ্টির
-                            কাজ করে যাচ্ছি।
-                        </p>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-sm-6 col-12 d-flex justify-content-center">
-                    <div class="card d-flex">
-                        <div class="icon d-flex">
-                            <img src="./images/icons/bulb-main.svg" class="hover-image hover-image-1" alt="">
-                            <img src="./images/icons/bulb-sec.svg" class="base-image base-image-1" alt="">
-                        </div>
-                        <h5>
-                            মানবিক সেবা
-                        </h5>
-                        <p>
-                            আমরা ধীরে ধীরে মানবিক সেবার দিকে এগোচ্ছি। দারিদ্র বিমোচন, ইয়াতিমের ভরণপোষণ, অতিদরিদ্র
-                            মেয়েদের বিবাহ এবং গৃহহীনদের ঘর নির্মাণ।
-                        </p>
-                    </div>
+            </div>
+        </section>
+
+        <!-- ========= Contact Start ========= -->
+
+        <section id="contact" class="container-fluid" aria-labelledby="contact-heading">
+            <div class="container">
+                <h2 id="contact-heading" class="text-center --main">আজই শুরু করুন আপনার ইসলামিক শিক্ষার যাত্রা</h2>
+                <p class="text-center --light">বিশ্বজুড়ে হাজারো শিক্ষার্থীর সঙ্গে আমরাও আপনাকে আমন্ত্রণ জানাচ্ছি—গুণগত
+                    মানসম্পন্ন শিক্ষার মাধ্যমে ইসলামের সাথে গভীর সম্পর্ক গড়ে তুলুন।</p>
+
+                <div class="d-flex justify-content-center align-items-center py-5">
+                    <a class="formBtn submit col-lg-3" href="contact.html" aria-label="যোগাযোগ ফর্মে যান">যোগাযোগ
+                        করুন</a>
                 </div>
 
             </div>
-        </div>
-    </section>
-
-    <!-- ========= Activities End ========= -->
-
-    <!-- ========= FAQ Start ========= -->
-
-    <section id="asked" class="container-fluid">
-        <div class="container">
-            <h3 class="text-center --secondery">সাধারণ জিজ্ঞাসা (FAQ)</h3>
-            <div class="accordion accordion-flush" id="accordionFlushExample">
-
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                            ❖ কিভাবে আমাদের ক্লাস পরিচালিত হয়?
-                        </button>
-                    </h2>
-                    <div id="flush-collapseOne" class="accordion-collapse collapse"
-                        data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">আমাদের লাইভ ওয়ান-টু-ওয়ান ক্লাস Zoom অ্যাপের মাধ্যমে পরিচালিত হয়,
-                            যেখানে আপনি সরাসরি উস্তাদের কাছ থেকে কুরআন শিক্ষা নিতে পারবেন। ক্লাসে যোগদান সহজ করার জন্য
-                            সকল ডিভাইসের জন্য ভিডিও টিউটোরিয়াল এবং আইটি এক্সপার্ট সাপোর্ট রয়েছে।</div>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                            ❖ কিভাবে ফ্রি ট্রায়াল ক্লাস গ্রহণ করবেন?
-                        </button>
-                    </h2>
-                    <div id="flush-collapseTwo" class="accordion-collapse collapse"
-                        data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">আমাদের ওয়েবসাইটে ফ্রি ট্রায়াল ক্লাসের ফর্ম রয়েছে। ফর্মটি পূরণ করে
-                            সাবমিট করার পর, আমাদের একজন দ্বীনী ভাই আপনার সাথে যোগাযোগ করবেন এবং প্রয়োজনীয় তথ্য দিয়ে
-                            আপনাকে
-                            ক্লাসে অংশগ্রহণ করতে সহায়তা করবেন।</div>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseThree" aria-expanded="false"
-                            aria-controls="flush-collapseThree">
-                            ❖ কেন ফ্রি ট্রায়াল ক্লাসের ব্যবস্থা রাখা হয়েছে?
-                        </button>
-                    </h2>
-                    <div id="flush-collapseThree" class="accordion-collapse collapse"
-                        data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">আমাদের লক্ষ্য হল আপনাকে সঠিক শিক্ষকের সাথে যুক্ত করা। ট্রায়াল
-                            ক্লাসের মাধ্যমে আপনি আমাদের সম্মানিত উস্তাদের সাথে পরিচিত হতে পারবেন এবং কুরআন শেখার যাত্রা
-                            শুরু করতে পারবেন, ইনশাআল্লাহ। যদি ট্রায়াল ক্লাসে আপনার শিক্ষক পছন্দ না হয়, তবে আমাদের
-                            জানান—আমরা আপনার জন্য আরও উপযুক্ত শিক্ষক নিযুক্ত করব।</div>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseFour" aria-expanded="false"
-                            aria-controls="flush-collapseFour">
-                            ❖ আপনাদের হাদিয়ার পরিমাণ কত?
-                        </button>
-                    </h2>
-                    <div id="flush-collapseFour" class="accordion-collapse collapse"
-                        data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">আমাদের হাদিয়ার পরিমাণ নির্ধারিত হয় ক্লাসের সময় ও সপ্তাহে কয়দিন ক্লাস
-                            করবেন তার ওপর ভিত্তি করে। বিস্তারিত জানতে, আমাদের WhatsApp-এ মেসেজ করুন।</div>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseFive" aria-expanded="false"
-                            aria-controls="flush-collapseFive">
-                            ❖ ট্রায়াল ক্লাস শেষে আপনাকে কী করতে হবে?
-                        </button>
-                    </h2>
-                    <div id="flush-collapseFive" class="accordion-collapse collapse"
-                        data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">আপনার ট্রায়াল ক্লাস শেষ হলে, আমরা পুনরায় আপনার সাথে যোগাযোগ করব এবং
-                            জানতে চাইব—<br>
-                            ✅ আপনি কত সময় ধরে ক্লাস নিতে চান<br>
-                            ✅ সপ্তাহে কয়দিন ক্লাস করতে চান<br>
-                            ✅ আপনি কী শিখতে চান<br>
-
-                            এরপর, আমরা আপনাকে হাদিয়ার পরিমাণ জানিয়ে দেব। সব ঠিক থাকলে, আল্লাহর ইচ্ছায় আপনার কুরআন শেখার
-                            যাত্রা শুরু হবে।</div>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
-                            ❖ কিভাবে পেমেন্ট করতে হবে?
-                        </button>
-                    </h2>
-                    <div id="flush-collapseSix" class="accordion-collapse collapse"
-                        data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">আলহামদুলিল্লাহ, আপনি আমাদের ব্যাংক অ্যাকাউন্টে অথবা বিকাশ/নগদ এর
-                            মাধ্যমে পেমেন্ট করতে পারবেন। বিস্তারিত তথ্যের জন্য WhatsApp-এ যোগাযোগ করুন। </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- ========= FAQ End ========= -->
-
-    <!-- ========= Contact Start ========= -->
-
-    <section id="contact" class="container-fluid">
-        <div class="container">
-            <h3 class="text-center --main">আজই শুরু করুন আপনার ইসলামিক শিক্ষার যাত্রা</h3>
-            <p class="text-center --light">বিশ্বজুড়ে হাজারো শিক্ষার্থীর সঙ্গে আমরাও আপনাকে আমন্ত্রণ জানাচ্ছি—গুণগত
-                মানসম্পন্ন শিক্ষার মাধ্যমে ইসলামের সাথে গভীর সম্পর্ক গড়ে তুলুন।</p>
-
-            <div class="d-flex justify-content-center align-items-center py-5">
-                <a class="formBtn submit col-lg-3" href="contact.html">যোগাযোগ করুন</a>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- ========= Contact End ========= -->
+        </section>
+    </main>
 
     <!-- ========= Footer Start ========= -->
 
-    <footer id="footer" class="container-fluid footerBg">
+    <footer id="footer" class="container-fluid footerBg" role="contentinfo">
         <div class="container">
             <div class="row gap-4 justify-content-between">
                 <div class="col-lg-3 col-12 left row justify-content-between">
-                    <a class="col-8 col-lg-12" href="#"><img class="img-fluid" src="./images/logos/logo-footer.png"
-                            alt="logo2"></a>
+                    <a class="col-8 col-lg-12" href="#" aria-label="Ilm-e Deen Academy Homepage">
+                        <img class="img-fluid" src="./images/logos/logo-footer.png" alt="Ilm-e Deen Academy Footer Logo"
+                            loading="lazy">
+                    </a>
                     <div class="col-lg-2 col-3 logos icons d-flex justify-content-center img-fluid d-lg-none">
-                        <ul class="d-flex gap-4">
+                        <ul class="d-flex gap-4" role="list">
                             <li>
-                                <a href="https://www.facebook.com/share/14qof6xKRo/" target="_blank"
-                                    aria-label="Share on Facebook"></a>
-                                <span class="visually-hidden"></span>
-                                </a>
-                                <i class="fa-brands fa-facebook-f"></i>
+                                <a href="https://www.facebook.com/ilmedeenacademy/" target="_blank" rel="noopener"
+                                    aria-label="Facebook পেজে যান">
+                                    <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.facebook.com/share/14qof6xKRo/" target="_blank"
-                                    aria-label="Share on Facebook">
-                                    <span class="visually-hidden"></span>
-                                </a>
-                                <i class="fa-brands fa-instagram"></i>
+                                <a href="contact.html" target="_blank" rel="noopener" aria-label="Instagram পেজে যান">
+                                    <i class="fa-brands fa-instagram" aria-hidden="true"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.facebook.com/share/14qof6xKRo/" target="_blank"
-                                    aria-label="Share on Facebook">
-                                </a>
-                                <i class="fa-brands fa-x-twitter"></i>
+                                <a href="contact.html" target="_blank" rel="noopener" aria-label="Twitter পেজে যান">
+                                    <i class="fa-brands fa-x-twitter" aria-hidden="true"></i>
                                 </a>
                             </li>
                         </ul>
@@ -675,36 +938,40 @@
                         <h4>
                             Support
                         </h4>
-                        <ul>
-                            <li><a href="https://wa.me/+8801328453232" target="_blank">Contact us</a></li>
-                            <li><a href="https://www.facebook.com/ilmedeenacademy/" target="_blank">Facebook</a></li>
-                            <li><a href="https://wa.me/+8801328453232" target="_blank">Whatsapp</a></li>
-                            <li><a href="contact.html" target="_blank">Telegram</a></li>
-                            <li><a href="https://wa.me/+8801328453232" target="_blank">Online Chat</a></li>
+                        <ul role="list">
+                            <li><a href="https://wa.me/+8801328453232" target="_blank" rel="noopener"
+                                    aria-label="WhatsApp এ যোগাযোগ করুন">Contact us</a></li>
+                            <li><a href="https://www.facebook.com/ilmedeenacademy/" target="_blank" rel="noopener"
+                                    aria-label="Facebook পেজ দেখুন">Facebook</a></li>
+                            <li><a href="https://wa.me/+8801328453232" target="_blank" rel="noopener"
+                                    aria-label="WhatsApp এ মেসেজ করুন">Whatsapp</a></li>
+                            <li><a href="contact.html" aria-label="Telegram যোগাযোগ">Telegram</a></li>
+                            <li><a href="https://wa.me/+8801328453232" target="_blank" rel="noopener"
+                                    aria-label="অনলাইন চ্যাট করুন">Online Chat</a></li>
                         </ul>
                     </div>
                     <div class="list col-4">
                         <h4>
                             Navigate
                         </h4>
-                        <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#about">About</a></li>
-                            <li><a href="#services">Services</a></li>
-                            <li><a href="#activities">Activities</a></li>
-                            <li><a href="contact.html">Contact</a></li>
+                        <ul role="list">
+                            <li><a href="#" aria-label="হোম পেজে যান">Home</a></li>
+                            <li><a href="#about" aria-label="পরিচিতি বিভাগে যান">About</a></li>
+                            <li><a href="#services" aria-label="সেবাসমূহ বিভাগে যান">Services</a></li>
+                            <li><a href="#activities" aria-label="কার্যক্রম বিভাগে যান">Activities</a></li>
+                            <li><a href="contact.html" aria-label="যোগাযোগ পেজে যান">Contact</a></li>
                         </ul>
                     </div>
                     <div class="list col-4">
                         <h4>
                             FAQ
                         </h4>
-                        <ul>
-                            <li><a href="#asked">Classes</a></li>
-                            <li><a href="#asked">Trial</a></li>
-                            <li><a href="#asked">Fees</a></li>
-                            <li><a href="#asked">Payments</a></li>
-                            <li><a href="#asked">What Next</a></li>
+                        <ul role="list">
+                            <li><a href="#asked" aria-label="ক্লাস সম্পর্কে জানুন">Classes</a></li>
+                            <li><a href="#asked" aria-label="ট্রায়াল ক্লাস সম্পর্কে জানুন">Trial</a></li>
+                            <li><a href="#asked" aria-label="ফি সম্পর্কে জানুন">Fees</a></li>
+                            <li><a href="#asked" aria-label="পেমেন্ট সম্পর্কে জানুন">Payments</a></li>
+                            <li><a href="#asked" aria-label="পরবর্তী ধাপ সম্পর্কে জানুন">What Next</a></li>
                         </ul>
                     </div>
                 </div>
@@ -714,22 +981,23 @@
                     </h4>
                     <p>
                         Have a question for us?
-                        We’ll answer your problem here!
+                        We'll answer your problem here!
                     </p>
-                    <ul class="d-flex gap-4">
+                    <ul class="d-flex gap-4" role="list">
                         <li>
-                            <a href="https://www.facebook.com/ilmedeenacademy/" target=" _blank"">
-                                <i class=" fa-brands fa-facebook-f"></i>
+                            <a href="https://www.facebook.com/ilmedeenacademy/" target="_blank" rel="noopener"
+                                aria-label="Facebook পেজে যান">
+                                <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="contact.html" target="_blank">
-                                <i class="fa-brands fa-instagram"></i>
+                            <a href="contact.html" target="_blank" rel="noopener" aria-label="Instagram পেজে যান">
+                                <i class="fa-brands fa-instagram" aria-hidden="true"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="contact.html" target="_blank">
-                                <i class="fa-brands fa-x-twitter"></i>
+                            <a href="contact.html" target="_blank" rel="noopener" aria-label="Twitter পেজে যান">
+                                <i class="fa-brands fa-x-twitter" aria-hidden="true"></i>
                             </a>
                         </li>
                     </ul>
@@ -780,17 +1048,17 @@
                 return false;
             }
         }, true);
-        
+
         // Suppress unhandled promise rejections from YouTube
         window.addEventListener('unhandledrejection', function (e) {
             if (e.reason && e.reason.toString().includes('youtubei')) {
                 e.preventDefault();
             }
         });
-        
+
         // Override console.error for YouTube errors
         const originalError = console.error;
-        console.error = function(...args) {
+        console.error = function (...args) {
             if (args.some(arg => typeof arg === 'string' && (arg.includes('youtubei') || arg.includes('log_event')))) {
                 return;
             }
@@ -799,9 +1067,85 @@
 
     </script>
 
-    <!-- <script src="./js/bootstrap.min.js"></script> -->
+    <!-- Mobile Floating Action Button -->
+    <div class="floating-contact d-md-none">
+        <a href="https://wa.me/+8801328453232" target="_blank" rel="noopener"
+            class="btn btn-success rounded-circle shadow-lg" aria-label="WhatsApp এ যোগাযোগ করুন">
+            <i class="fab fa-whatsapp" style="font-size: 24px;"></i>
+        </a>
+    </div>
+
+    <style>
+        .floating-contact {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+
+        .floating-contact .btn {
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.05);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        .floating-contact .btn:hover {
+            transform: scale(1.1);
+        }
+    </style>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./js/script.js"></script>
+
+    <script>
+        // Mobile image loading optimization
+        document.addEventListener('DOMContentLoaded', function () {
+            const lazyImages = document.querySelectorAll('img[loading="lazy"]');
+
+            if ('IntersectionObserver' in window) {
+                const imageObserver = new IntersectionObserver((entries, observer) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            const img = entry.target;
+                            img.classList.add('loaded');
+                            observer.unobserve(img);
+                        }
+                    });
+                });
+
+                lazyImages.forEach(img => imageObserver.observe(img));
+            }
+
+            // Mobile touch feedback
+            const touchElements = document.querySelectorAll('.nav-link, .button, .btn');
+            touchElements.forEach(element => {
+                element.addEventListener('touchstart', function () {
+                    this.style.opacity = '0.7';
+                });
+
+                element.addEventListener('touchend', function () {
+                    this.style.opacity = '1';
+                });
+            });
+        });
+    </script>
 </body>
 
 </html>

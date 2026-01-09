@@ -28,7 +28,7 @@ body::selection
 }
 
 h2 {
-  font-family: "Noto Sans Bengali";
+  font-family: "Soliman Lipi";
   font-size: 34px;
   font-style: normal;
   font-weight: 400;
@@ -36,11 +36,15 @@ h2 {
 }
 
 h3 {
-  font-family: "Noto Sans Bengali";
+  font-family: "Soliman Lipi";
   font-size: 36px;
   font-style: normal;
   font-weight: 700;
   line-height: 60px;
+}
+
+#services h3 {
+  margin-bottom: 32px;
 }
 
 .--main {
@@ -114,7 +118,7 @@ h3 {
 .navbar-expand-lg .navbar-nav .nav-link {
   color: var(--main);
   text-align: center;
-  font-family: "Noto Sans Bengali", serif;
+  font-family: "Soliman Lipi", serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -169,7 +173,7 @@ h1 {
 
 #banner p {
   color: var(--main);
-  font-family: "Noto Sans Bengali";
+  font-family: "Soliman Lipi";
   font-size: 26px;
   font-style: normal;
   font-weight: 600;
@@ -248,7 +252,7 @@ h1 {
 
 #about .container .right p, ul {
   color: var(--body);
-  font-family: "Noto Sans Bengali";
+  font-family: "Soliman Lipi";
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -262,7 +266,7 @@ h1 {
 .aboutCall {
   color: var(--secondery);
   text-align: center;
-  font-family: "Noto Sans Bengali";
+  font-family: "Soliman Lipi";
   font-size: 24px;
   font-style: normal;
   font-weight: 500;
@@ -308,7 +312,7 @@ h1 {
 }
 
 #services .card h4 {
-  font-family: "Noto Sans Bengali";
+  font-family: "Soliman Lipi";
   font-size: 26.789px;
   font-style: normal;
   font-weight: 700;
@@ -317,7 +321,7 @@ h1 {
 }
 
 #services .card ul {
-  font-family: "Noto Sans Bengali";
+  font-family: "Soliman Lipi";
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
@@ -326,7 +330,7 @@ h1 {
 }
 
 .cardCall {
-  font-family: "Noto Sans Bengali";
+  font-family: "Soliman Lipi";
   border-radius: 26.789px;
   border: 2px solid #e0be74;
   color: #e0be74;
@@ -459,7 +463,7 @@ h1 {
   width: 302px;
   /* height: 292px; */
   border-radius: 6px;
-  font-family: "Noto Sans Bengali";
+  font-family: "Soliman Lipi";
   background: var(--main);
   padding: 42px 28px 52px;
   transition: all ease-in-out 0.3s;
@@ -530,7 +534,7 @@ h1 {
 #asked {
   padding: 100px 0;
   background: var(--main);
-  font-family: "Noto Sans Bengali";
+  font-family: "Soliman Lipi";
 }
 
 #asked h3 {
@@ -564,7 +568,7 @@ h1 {
 
 .accordion-body {
   color: var(--light);
-  font-family: "Noto Sans Bengali";
+  font-family: "Soliman Lipi";
   font-size: 19px;
   font-style: normal;
   font-weight: 500;
@@ -578,13 +582,13 @@ h1 {
 
 #contact {
   padding: 100px 0;
-  font-family: "Noto Sans Bengali";
+  font-family: "Soliman Lipi";
 }
 
 .formBtn {
   width: 286px;
   height: 60px;
-  font-family: "Noto Sans Bengali";
+  font-family: "Soliman Lipi";
   padding: 20px;
   color: var(--secondery);
   text-align: center;
@@ -671,7 +675,7 @@ option:hover
 
 #contact label {
   color: var(--light);
-  font-family: "Noto Sans Bengali";
+  font-family: "Soliman Lipi";
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
